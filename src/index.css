@@ -1,6 +1,30 @@
 @import "tailwindcss";
-/* 
-*{
+
+/* *{
     border: 2px solid red;
-} */
+}  */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+
+.veritcalLine{
+  border-left: 2px solid grey;
+  padding-left: 45px;
+}
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+
 
