@@ -3,8 +3,8 @@ import React from 'react';
 export default function Aboutsection1() {
   return (
     <section className="pb-10 mx-5 md:mx-10 lg:mx-20">
-      <div className="rounded-4xl py-10 md:py-20 lg:py30">
-        <div className="grid grid-cols-1 lg:grid-cols-6 gap-10 md:gap-10 px-5 md:px-10 lg:px-25 2xl:px-60">
+      <div className="rounded-4xl py-10 md:py-20 lg:py-30">
+        <div className="grid grid-cols-1 lg:grid-cols-6 gap-10 md:gap-8 px-3 md:px-10 lg:px-28">
           {/* Image Left */}
           <div className="col-span-1">
             <img
