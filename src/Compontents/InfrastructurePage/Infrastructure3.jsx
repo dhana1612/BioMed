@@ -6,7 +6,7 @@ export default function Infrastructure3() {
       className="py-10 mx-5 md:mx-10 lg:mx-20"
       aria-label="Spray Drying Technology at Biomed International"
     >
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 md:gap-17 px-5 md:px-10 lg:px-25 2xl:px-60">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 md:gap-10 px-1 md:px-10 lg:px-28">
         {/* Left Image */}
         <div>
           <img
