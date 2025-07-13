@@ -10,19 +10,19 @@ export default function CertificationsSection() {
   ];
 
   return (
-    <section className="bg-white py-10 px-4 sm:px-6 md:px-10">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-white py-10 px-5 md:px-20 lg:px-45">
+      <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="mb-10">
-          <p className="text-green-600 text-base sm:text-lg md:text-xl font-medium flex items-center gap-2">
+          <p className="text-green-600 text-lg md:text-xl font-medium flex items-center gap-2">
             <span className="w-3 h-3 bg-green-500 rounded-full inline-block" />
             Our Certifications
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-4">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold">
+            <h2 className="text-2xl  md:text-3xl font-semibold">
               Global Standards, Proven Excellence
             </h2>
-            <p className="text-gray-700 text-sm sm:text-base md:text-lg max-w-2xl">
+            <p className="text-gray-700 text-lg md:text-xl max-w-2xl">
               Our commitment to quality, safety, and compliance is reflected in
               the certifications we proudly hold. Each certificate is a testament
               to our adherence to international regulatory standards and our
@@ -38,7 +38,7 @@ export default function CertificationsSection() {
               key={index}
               src={cert.src}
               alt={cert.alt}
-              className="w-24 sm:w-28 md:w-56 object-contain"
+              className="w-35 md:w-50 object-contain"
               loading="lazy"
             />
           ))}
