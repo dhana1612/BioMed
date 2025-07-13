@@ -3,11 +3,11 @@ import React from 'react';
 export default function Aboutsection4() {
   return (
     <section
-      className="bg-gray-200 py-10 mx-5 md:mx-10 lg:mx-20 rounded-4xl mb-20"
+      className="bg-gray-200 py-10 mx-3 md:mx-10 lg:mx-20 rounded-4xl mb-20"
       aria-labelledby="what-we-do"
     >
       {/* Section Title */}
-      <div className="px-5 md:px-10 lg:px-25 2xl:px-60 p-10">
+      <div className="px-3 md:px-10 lg:px-25 2xl:px-28 p-10">
         <p id="what-we-do" className="text-green-600 py-3 text-lg md:text-xl">
           <span className="text-green-500 text-2xl" aria-hidden="true">●</span>{' '}
           What We Do
@@ -15,7 +15,7 @@ export default function Aboutsection4() {
       </div>
 
       {/* Content Section */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-17 px-5 md:px-10 lg:px-25 2xl:px-60">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-17 px-3 md:px-10 lg:px-25 2xl:px-28">
         <div>
           <h2 className="font-bold py-3 text-xl md:text-3xl">
             Empowering Health Through Science and Innovation
@@ -33,7 +33,7 @@ export default function Aboutsection4() {
       </div>
 
       {/* YouTube Video Section */}
-      <div className="px-5 md:px-10 lg:px-25 2xl:px-60 py-10">
+      <div className="px-3 md:px-10 lg:px-25 2xl:px-28 py-10">
         <div className="relative w-full" style={{ paddingTop: '40%' }}>
           <iframe
             className="absolute top-0 left-0 w-full h-full rounded-xl"
