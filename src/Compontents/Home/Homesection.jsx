@@ -9,6 +9,7 @@ import CertificationsSection from '../CertificationsSection'
 export default function Homesection() {
   return (
     <>
+    <Helmet></Helmet>
     <HeroSection/>
     <Home1/>
     <Infrastructure3/>

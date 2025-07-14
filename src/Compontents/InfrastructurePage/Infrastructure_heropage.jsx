@@ -1,23 +1,38 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Infrastructure_heropage() {
+useEffect(() => {
+    AOS.init({
+      duration: 1200, 
+      once: true,     
+    });
+  }, []);
+
   return (
-    <header
-      className="py-15 px-5 md:px-10 lg:px-20"
-      aria-label="Infrastructure Hero Section"
-    >
-      <div
-        className="py-35 md:py-45 lg:py-60 bg-green-300 rounded-4xl bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.theconversation.com/files/675612/original/file-20250620-56-novrkv.jpg?ixlib=rb-4.1.0&rect=300%2C0%2C5340%2C2567&q=45&auto=format&w=668&h=324&fit=crop')",
-        }}
-        role="img"
-        aria-label="A view representing Biomed International's infrastructure and facilities"
-      >
-        <h1 className="px-10 md:px-20 lg:px-30 font-bold text-white text-3xl md:text-5xl lg:text-7xl">
-          Infrastructure
-        </h1>
+    <header className="my-15 px-5 md:px-10 lg:px-20 mx-5 lg:mx-20 rounded-4xl" aria-label="Contact Page Hero Section" style={{
+            backgroundImage:
+                "url('https://images.theconversation.com/files/675612/original/file-20250620-56-novrkv.jpg?ixlib=rb-4.1.0&rect=300%2C0%2C5340%2C2567&q=45&auto=format&w=668&h=324&fit=crop')",
+              backgroundSize: "cover",
+              backgroundPosition: "center"
+            }}>
+      <div className="max-w-7xl mx-auto" >
+        <div
+          className="py-35 md:py-45 lg:py-60 relative"
+          
+          role="img"
+          aria-label="Scenic background image representing contact page"
+          data-aos="fade-down"
+        >
+          <h1 
+            className=" font-bold text-white text-3xl md:text-5xl lg:text-7xl"
+            data-aos="slide-up"
+            data-aos-delay="300"
+          >
+            Infrastructure
+          </h1>
+        </div>
       </div>
     </header>
   );

@@ -1,15 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Footer = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <footer>
-      <div className='py-8 bg-green-600 text-white px-5 md:px-20 xl:px-50'>
-        <div className="flex flex-col lg:flex-row justify-between items-center text-center md:text-left gap-3">
+      {/* Call to Action */}
+      <div
+        className='py-8 bg-green-600 text-white mb-5'
+        data-aos="fade-up"
+      >
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center text-center md:text-left gap-3 px-5 md:px-10 lg:px-5">
           <p className="text-lg md:text-3xl font-medium">
             Give more information regarding our products.
           </p>
 
-          <a href="#contact" title="Contact us" className="group relative flex items-center border border-green-600 text-green-600 px-5 py-3.5 rounded-full overflow-hidden transition-all duration-500 ease-in-out bg-white hover:bg-lime-400">
+          <a
+            href="/contact"
+            title="Contact us"
+            className="group relative flex items-center border border-green-600 text-green-600 px-5 py-3.5 rounded-full overflow-hidden transition-all duration-500 ease-in-out bg-white hover:bg-lime-400"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <span className="absolute left-0 top-0 h-full w-0 bg-lime-400 group-hover:w-full transition-all duration-500 ease-in-out z-0"></span>
             <span className="flex items-center z-10 relative transition-colors duration-500 group-hover:text-white">
               Let’s Connect
@@ -23,72 +39,83 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div className="px-5 md:px-20 xl:px-50 py-10">
-        <img src="/logo.png" alt="Biomed International Logo" className="h-12 sm:h-14 pt-3" loading="lazy" />
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium py-3">
-          We are happy to serve you.
-        </h3>
+      {/* Logo & Tagline */}
+      <div className="pb-7" data-aos="fade-up" data-aos-delay="300">
+        <div className="max-w-7xl mx-auto px-5 md:px-10 lg:px-5">
+          <img src="/logo.png" alt="Biomed International Logo" className="h-12 sm:h-14 pt-2" loading="lazy" />
+          <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium py-2">
+            We are happy to serve you.
+          </h3>
+        </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-6 gap-5 md:gap-8 px-5 md:px-20 xl:px-50 pb-10">
+      {/* Contact Info */}
+      <div className="pb-7" data-aos="fade-up" data-aos-delay="400">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-6 gap-5 md:gap-8 px-5 md:px-10 lg:px-5">
+          <div className='col-span-2'>
+            <h4 className="text-xl md:text-xl mb-4 font-bold">
+              Established platform for the green environment.
+            </h4>
+            <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
+              Biomed International is the only company with a drug licence to manufacture
+              Chondroitin Sulfate Sodium as an API/Drug in India. The process is developed
+              in-house from lab scale to commercial production.
+            </p>
+          </div>
 
-        <div className='col-span-2'>
-          <h4 className="text-xl md:text-xl mb-4 font-bold">
-            Established platform for the green environment.
-          </h4>
-          <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
-            Biomed International is the only company with a drug licence to manufacture
-            Chondroitin Sulfate Sodium as an API/Drug in India. The process is developed
-            in-house from lab scale to commercial production.
-          </p>
+          <div className='col-span-2 lg:col-span-1'>
+            <h4 className="mb-4 text-lg font-bold">Phone Number</h4>
+            <p className='text-lg md:text-xl'>
+              <a href="tel:+919791154650" className="hover:underline">9791154650</a>
+            </p>
+            <p className='text-lg md:text-xl'>
+              <a href="tel:+917995111285" className="hover:underline">7995111285</a>
+            </p>
+          </div>
+
+          <div className='col-span-2 lg:col-span-1'>
+            <h4 className="mb-4 text-lg font-bold">Email Address</h4>
+            <p className='text-lg md:text-xl'>
+              <a href="mailto:info@biomedintl.in" className="hover:underline">info@biomedintl.in</a>
+            </p>
+          </div>
+
+          <div className='col-span-2'>
+            <h4 className="mb-4 text-lg font-bold">Location</h4>
+            <p className="font-medium text-lg md:text-xl mb-4">Unit – I</p>
+            <p className="text-gray-700 mb-4 text-lg md:text-xl">
+              Sy No: 51/1, Mekanuru Village Guduru Mandal,<br />
+              Tirupati District, Andhra Pradesh<br />
+              INDIA-524 410
+            </p>
+            <p className="font-medium text-lg md:text-xl mb-4">Unit – II</p>
+            <p className="text-gray-700 text-lg md:text-xl">
+              Sy No: 62P & 63P, Plot No.7, APIIC IP,<br />
+              Attivaram Village, Ozili Mandal,<br />
+              Tirupati District, Andhra Pradesh,<br />
+              INDIA-524 421
+            </p>
+          </div>
         </div>
-
-        <div className='col-span-2 lg:col-span-1'>
-          <h4 className="mb-4 text-lg font-bold">Phone Number</h4>
-          <p className='text-lg md:text-xl'>
-            <a href="tel:+919791154650" className="hover:underline">9791154650</a>
-          </p>
-          <p className='text-lg md:text-xl'>
-            <a href="tel:+917995111285" className="hover:underline">7995111285</a>
-          </p>
-        </div>
-
-        <div className='col-span-2 lg:col-span-1'>
-          <h4 className="mb-4 text-lg font-bold">Email Address</h4>
-          <p className='text-lg md:text-xl'>
-            <a href="mailto:info@biomedintl.in" className="hover:underline">info@biomedintl.in</a>
-          </p>
-        </div>
-
-        <div className='col-span-2  '>
-          <h4 className="mb-4 text-lg font-bold">Location</h4>
-          <p className="font-medium text-lg md:text-xl mb-4">Unit – I</p>
-          <p className="text-gray-700 mb-4 text-lg md:text-xl">
-            Sy No: 51/1, Mekanuru Village Guduru Mandal,<br />
-            Tirupati District, Andhra Pradesh<br />
-            INDIA-524 410
-          </p>
-          <p className="font-medium text-lg md:text-xl mb-4">Unit – II</p>
-          <p className="text-gray-700 text-lg md:text-xl">
-            Sy No: 62P & 63P, Plot No.7, APIIC IP,<br />
-            Attivaram Village, Ozili Mandal,<br />
-            Tirupati District, Andhra Pradesh,<br />
-            INDIA-524 421
-          </p>
-        </div>
-
       </div>
 
-      <nav aria-label="Footer Navigation" className="border-t border-gray-300 py-10 px-5 md:px-20 xl:px-50 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 gap-5">
-        <div className="flex flex-wrap gap-4 sm:gap-6 justify-center md:justify-start text-lg md:text-xl">
-          <a href="/" className="hover:text-green-600" title="Go to Home page">Home</a>
-          <a href="/about" className="hover:text-green-600" title="Learn more About Us">About Us</a>
-          <a href="/infrastructure" className="hover:text-green-600" title="Explore our Infrastructure">Infrastructure</a>
-          <a href="/products" className="hover:text-green-600" title="View our Products">Products</a>
-          <a href="/contact" className="hover:text-green-600" title="Contact Us">Contact Us</a>
-        </div>
-        <div className="text-center md:text-right text-base">
-          © 2025 Biomed International
+      {/* Footer Nav */}
+      <nav
+        aria-label="Footer Navigation"
+        className="border-t border-gray-300 py-10"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-600 gap-5 px-5 md:px-10 lg:px-5">
+          <div className="flex flex-wrap gap-4 sm:gap-6 justify-center md:justify-start text-lg md:text-xl">
+            <a href="/" className="hover:text-green-600" title="Go to Home page">Home</a>
+            <a href="/about-us" className="hover:text-green-600" title="Learn more About Us">About Us</a>
+            <a href="/infrastructure" className="hover:text-green-600" title="Explore our Infrastructure">Infrastructure</a>
+            <a href="/contact" className="hover:text-green-600" title="Contact Us">Contact Us</a>
+          </div>
+          <div className="text-center md:text-right text-base">
+            © 2025 Biomed International
+          </div>
         </div>
       </nav>
     </footer>

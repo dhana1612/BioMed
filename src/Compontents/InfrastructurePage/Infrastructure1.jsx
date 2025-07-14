@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Infrastructure1() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
-    <section className="py-10 mx-5 md:mx-10 lg:mx-20" aria-label="Biomed Infrastructure Overview">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-17 px-5 md:px-10 lg:px-25 2xl:px-60">
+    <section
+      className="py-1 md:py-10"
+      aria-label="Biomed Infrastructure Overview"
+    >
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 px-5 md:px-10 lg:px-5">
 
         {/* Image Section */}
-        <div>
+        <div data-aos="fade-right">
           <img
             src="https://toonzacademy.com/wp-content/uploads/learn-advanced-animation-courses-.webp"
             alt="Biomed International Manufacturing Facility Exterior"
@@ -15,7 +24,7 @@ export default function Infrastructure1() {
         </div>
 
         {/* Text Section */}
-        <div>
+        <div data-aos="fade-left">
           <h1 className="font-bold py-3 text-xl md:text-3xl">
             Advanced Manufacturing Facilities for Biomolecules and Supplements Across Two Strategic Locations.
           </h1>
@@ -33,7 +42,6 @@ export default function Infrastructure1() {
             A dedicated cleanroom environment is in place for the manufacturing of pharmaceutical, nutraceutical, and food supplement products. Biomed’s infrastructure is robust, supported by a versatile platform and a highly experienced team.
           </p>
         </div>
-
       </div>
     </section>
   );

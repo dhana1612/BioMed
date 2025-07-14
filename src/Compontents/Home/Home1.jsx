@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home1() {
   const products = [
     {
       name: 'Chondroitin Sulfate Sodium',
-      image: '/Shared/images/Image1.jpg', 
+      image: '/Shared/images/Image1.jpg',
     },
     {
       name: 'Collagen',
@@ -12,25 +14,41 @@ export default function Home1() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <section
-      className="relative my-10 sm:my-16 md:my-20 lg:my-24 px-4 sm:px-6 md:px-10 lg:px-20"
+      className="relative mb-10 sm:mb-16 md:mb-20 lg:mb-24 mx-5 md:mx-10 lg:mx-20"
       aria-label="Product Showcase Section"
     >
-      <div className="bg-gray-50 rounded-2xl py-10 sm:py-14 md:py-16 lg:py-20 max-w-screen-2xl mx-auto">
-        <div className="px-4 sm:px-6 md:px-10">
-          <p className="text-green-600 text-lg sm:text-xl font-medium mb-2 lg:mx-20">
+      <div className="bg-gray-200 rounded-2xl py-10 sm:py-14 md:py-16 lg:py-20">
+        <div className="px-5 max-w-7xl mx-auto">
+          <p 
+            className="text-green-600 text-lg sm:text-xl font-medium mb-2"
+            data-aos="fade-up"
+          >
             • Products
           </p>
-          <p className="text-xl sm:text-2xl md:text-3xl font-bold mb-8 lg:mx-20">
+          <p 
+            className="text-xl sm:text-2xl md:text-3xl font-bold mb-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             Our Advanced Biotech Offerings
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:mx-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             {products.map((product, index) => (
               <div
                 key={index}
                 className="rounded-2xl overflow-hidden shadow-md relative group"
+                data-aos="zoom-in"
+                data-aos-delay={`${index * 200}`} // stagger effect!
               >
                 <img
                   src={product.image}

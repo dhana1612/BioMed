@@ -1,22 +1,28 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Heart } from 'lucide-react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Productsection13() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const cards = [
     {
       title: "Joint health treatment",
       description:
-        "Oral supplements help manage joint discomfort in knees, hips, hands, and spine while managing progression of joint conditions.",
+        "Oral supplements help manage joint discomfort in knees, hips, hands, and spine while slowing joint condition progression.",
     },
     {
       title: "Skin health supports",
       description:
-        "Helps manage chronic skin conditions, fights wrinkles and fine lines, keeps skin hydrated and supports elasticity.",
+        "Helps manage chronic skin conditions, fights wrinkles and fine lines, keeps skin hydrated, and supports elasticity.",
     },
     {
       title: "Maintains Healthy Eyes",
       description:
-        "Present in dry eye drops and FDA-approved for cataract surgery. Useful for preserving corneas during transplant surgery.",
+        "Used in dry eye drops and FDA-approved for cataract surgery. Helps preserve corneas during transplant surgery.",
     },
     {
       title: "Lower risk of Heart attacks",
@@ -25,15 +31,23 @@ export default function Productsection13() {
     },
   ];
 
+  const applications = [
+    "Oral care products",
+    "Skin care products",
+    "Hair care products",
+    "Sunscreen products",
+    "Nail and lip care products",
+  ];
+
   return (
     <section
-      className="py-10 mx-5 md:mx-10 lg:mx-20"
+      className="pb-10"
       aria-label="Chondroitin Sulfate Sodium Health Benefits"
     >
-      <div className="py-1 md:py-20 lg:py-30">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-17 px-5 md:px-10 lg:px-25 2xl:px-60">
-          {/* Left Content */}
-          <div>
+      <div className="max-w-7xl mx-auto py-1 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-5 md:px-10 lg:px-5">
+          {/* ✅ Left Content */}
+          <div data-aos="fade-right">
             <h1 className="font-bold py-3 text-xl md:text-3xl">
               Health Benefits of Chondroitin Sulfate Sodium
             </h1>
@@ -41,14 +55,14 @@ export default function Productsection13() {
               Chondroitin sulfate sodium provides the building blocks for the body to produce new cartilage.
             </p>
             <p className="py-3 text-lg md:text-xl">
-              It can supplement calcium, preventing <span className="font-bold">OSTEOARTHRITIS</span> and reducing back pain, shoulder pain, and arthritis.
+              It can supplement calcium, helping prevent <span className="font-bold">OSTEOARTHRITIS</span> and reduce back pain, shoulder pain, and arthritis.
             </p>
             <p className="py-3 text-lg md:text-xl">Decreases joint pain and inflammation.</p>
             <p className="py-3 text-lg md:text-xl">
               Used in dietary supplements as an alternative medicine to treat <span className="font-bold">OSTEOARTHRITIS</span> and <span className="font-bold">CATARACTS</span>.
             </p>
             <p className="py-3 text-lg md:text-xl">
-              Activates connective tissues and cells, helping to repair cartilage tissue and prevent its degradation.
+              Activates connective tissues and cells, helping repair cartilage tissue and prevent degradation.
             </p>
 
             <div className="py-3">
@@ -60,13 +74,18 @@ export default function Productsection13() {
             </div>
           </div>
 
-          {/* Right Cards + Applications */}
+          {/* ✅ Right Cards & Applications */}
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-7 py-5">
               {cards.map((card, index) => (
-                <div key={index} className="h-full">
-                  <div className="relative group overflow-hidden bg-gray-100 rounded-3xl h-full flex flex-col justify-between py-10 px-6">
-                    {/* Hover Overlay */}
+                <div
+                  key={index}
+                  className="h-full"
+                  data-aos="zoom-in"
+                  data-aos-delay={index * 100}
+                >
+                  <div className="relative group overflow-hidden bg-gray-100 rounded-3xl h-full flex flex-col justify-between py-10 px-6 transition-transform duration-300 hover:shadow-lg">
+                    {/* Green overlay */}
                     <div className="absolute inset-0 bg-green-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
 
                     {/* Card Content */}
@@ -82,18 +101,12 @@ export default function Productsection13() {
               ))}
             </div>
 
-            {/* Applications */}
             <hr className="my-6" />
-            <div className="px-3">
+
+            <div className="px-3" data-aos="fade-up">
               <h2 className="font-bold py-5 text-xl">Applications of Chondroitin Sulfate Sodium:</h2>
               <div className="flex flex-wrap gap-x-10 gap-y-4">
-                {[
-                  "Oral care products",
-                  "Skin care products",
-                  "Hair care products",
-                  "Sunscreen products",
-                  "Nail and lip care products",
-                ].map((item, idx) => (
+                {applications.map((item, idx) => (
                   <div key={idx} className="flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-green-600"></span>
                     <p className="text-md md:text-lg">{item}</p>
@@ -101,6 +114,7 @@ export default function Productsection13() {
                 ))}
               </div>
             </div>
+
           </div>
         </div>
       </div>

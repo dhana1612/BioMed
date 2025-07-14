@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Heart } from 'lucide-react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function ProductSection22() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const cards = [
     {
       title: "Joint health treatment",
@@ -23,18 +29,33 @@ export default function ProductSection22() {
       description:
         "Anti-thrombogenic properties help prevent the formation of blood clots in the bloodstream.",
     },
+    {
+      title: "Supports Bone Strength",
+      description:
+        "Helps maintain bone density and flexibility, supporting overall skeletal health.",
+    },
+    {
+      title: "Improves Mobility",
+      description:
+        "Enhances joint lubrication and cushioning, improving movement and range of motion.",
+    },
   ];
 
   return (
     <section
-      className="py-10 mx-5 md:mx-10 lg:mx-20"
+      className="py-10"
       aria-label="Chondroitin Sulfate Sodium Health Benefits"
     >
-      <div className="py-2 md:py-12 lg:py-30">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5 md:px-10 lg:px-25 2xl:px-60">
+      <div className="max-w-7xl mx-auto py-2 md:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-5 md:px-10 lg:px-5">
           {cards.map((card, index) => (
-            <div key={index} className="h-full">
-              <div className="relative group overflow-hidden bg-gray-100 rounded-3xl h-full flex flex-col justify-between py-20 px-6">
+            <div
+              key={index}
+              className="h-full"
+              data-aos="zoom-in"
+              data-aos-delay={index * 100}
+            >
+              <div className="relative group overflow-hidden bg-gray-100 rounded-3xl h-full flex flex-col justify-between py-20 px-6 transition-transform duration-300 hover:shadow-lg">
                 {/* Green overlay */}
                 <div className="absolute inset-0 bg-green-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
 

@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Aboutsection2() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
-    <section className="mx-5 md:mx-10 lg:mx-20">
-      <div className="bg-gray-100 rounded-4xl py-10 md:py-20 lg:py30">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-10 px-5 md:px-10 lg:px-25 2xl:px-60">
+    <section className="mx-2 md:mx-10 lg:mx-20">
+      <div className="bg-gray-100 rounded-4xl py-10 md:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-10 px-5 md:px-10 lg:px-5 max-w-7xl mx-auto">
           {/* Text Section */}
-          <div className="py-3">
+          <div className="py-3" data-aos="fade-right">
             <h1 className="font-bold py-3 text-xl md:text-3xl">
               Leading the Future of Life Sciences Since 2014
             </h1>
@@ -43,7 +49,7 @@ export default function Aboutsection2() {
           </div>
 
           {/* Image Section */}
-          <div>
+          <div data-aos="fade-left" data-aos-delay="200">
             <img
               src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
               alt="Biomed production infrastructure and facility"

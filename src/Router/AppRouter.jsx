@@ -8,18 +8,20 @@ import Homesection from '../Compontents/Home/Homesection'
 import Productsection1 from '../Compontents/Product/ProductSection1/Productsection1'
 import ProductSection2 from '../Compontents/Product/ProductSection2/ProductSection2'
 import Contact from '../Compontents/Contact/Contact'
+import MetaTags from '../Core/Metatags'
 
 export const AppRouter = () => {
   return (
     <BrowserRouter>
+    <MetaTags/>
     <Routes>
          <Route element={<Main/>}>
           <Route path="/" element={<Homesection/>} />
-           <Route path="/Infrastructure" element={<InfrastructurePage/>} />
-           <Route path="/About Us" element={<Aboutus/>} />
-           <Route path="/Product/Chrondroitin Sulfate sodium" element={<Productsection1/>} />
-           <Route path="/Product/Collagen" element={<ProductSection2/>} />
-           <Route path="/Contact" element={<Contact/>} />
+           <Route path="/infrastructure" element={<InfrastructurePage/>} />
+           <Route path="/about-us" element={<Aboutus/>} />
+           <Route path="/product/chondroitin-sulfate-sodium" element={<Productsection1/>} />
+           <Route path="/product/collagen" element={<ProductSection2/>} />
+           <Route path="/contact" element={<Contact/>} />
          </Route>
     </Routes>
     </BrowserRouter>
