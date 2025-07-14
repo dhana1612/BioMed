@@ -62,7 +62,7 @@ const MetaTags = () => {
     : metaInfo["/"];
 
   const image = "https://images.theconversation.com/files/675612/original/file-20250620-56-novrkv.jpg?ixlib=rb-4.1.0&rect=300%2C0%2C5340%2C2567&q=45&auto=format&w=668&h=324&fit=crop";
-  const url = `https://bio-med-dhana1612s-projects.vercel.app${location.pathname}`;
+  const url = `https://bio-med.vercel.app${location.pathname}`;
 
   return (
     <Helmet>
