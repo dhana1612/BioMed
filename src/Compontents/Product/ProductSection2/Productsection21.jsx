@@ -7,7 +7,7 @@ export default function Productsection21() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-   const applications = [
+  const applications = [
     "Type I: Tendon, cornea",
     "Type II: Cartilage",
     "Type III: Blood vessels",
@@ -35,15 +35,15 @@ export default function Productsection21() {
               Function of Collagen
             </h2>
             <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
-                  <li className="pb-3">Collagen is rigid and resistant to stretching for skin, also provides strength and elasticity.</li>
-                  <li className="pb-3">Collagen interacts directly with cells in at least three distinctive ways.</li>
-                  <li className="pb-3">Interacts with receptors that recognize an Arg-Gly-Asp-Thy sequence.</li>
-                   <li className="pb-3">Through adhesive proteins such as fibronectin and laminin.</li>
-                  <li className="pb-3">Via proteoglycans.</li>
-                  <li className="pb-3">Provides flexibility, support, and movement to cartilage.</li>
-                   <li className="pb-3">Strength, support, shape, and elasticity to the tissues.</li>
-                  <li className="pb-3">Collagen fills the sclera of the eye in crystalline form.</li>
-                  <li>Collagen protects delicate organs like kidneys and spleen.</li>
+              <li className="pb-3">Collagen is rigid and resistant to stretching for skin, also provides strength and elasticity.</li>
+              <li className="pb-3">Collagen interacts directly with cells in at least three distinctive ways.</li>
+              <li className="pb-3">Interacts with receptors that recognize an Arg-Gly-Asp-Thy sequence.</li>
+              <li className="pb-3">Through adhesive proteins such as fibronectin and laminin.</li>
+              <li className="pb-3">Via proteoglycans.</li>
+              <li className="pb-3">Provides flexibility, support, and movement to cartilage.</li>
+              <li className="pb-3">Strength, support, shape, and elasticity to the tissues.</li>
+              <li className="pb-3">Collagen fills the sclera of the eye in crystalline form.</li>
+              <li>Collagen protects delicate organs like kidneys and spleen.</li>
             </ul>
 
             <h2 className="font-bold py-3 text-base md:text-lg">
@@ -51,13 +51,13 @@ export default function Productsection21() {
             </h2>
 
             <div className="flex flex-wrap gap-x-10 gap-y-4">
-                {applications.map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-green-600"></span>
-                    <p className="text-md md:text-lg">{item}</p>
-                  </div>
-                ))}
-              </div>
+              {applications.map((item, idx) => (
+                <div key={idx} className="flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-green-600"></span>
+                  <p className="text-md md:text-lg">{item}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
         </div>

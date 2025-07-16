@@ -17,6 +17,7 @@ export default function Aboutsection1() {
               src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
               alt="Biomed production team working in lab"
               className="w-full h-full object-cover rounded-4xl"
+              loading="lazy" // Lazy load images for performance
             />
           </div>
 
@@ -26,14 +27,15 @@ export default function Aboutsection1() {
               src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
               alt="Biomed equipment facility"
               className="w-full h-full object-cover rounded-4xl"
+              loading="lazy"
             />
           </div>
 
           {/* Text Content */}
           <div className="py-3 md:col-span-2 lg:col-span-4" data-aos="fade-left" data-aos-delay="400">
-            <p className="py-3 text-lg md:text-xl  flex items-center gap-2">
+            <p className="py-3 text-lg md:text-xl flex items-center gap-2">
               <span className="w-3 h-3 rounded-full bg-green-500"></span>
-                 What We Do
+              What We Do
             </p>
 
             <h1 className="font-bold py-3 text-xl md:text-3xl">

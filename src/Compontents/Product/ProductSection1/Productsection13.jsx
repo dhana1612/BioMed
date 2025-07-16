@@ -5,7 +5,10 @@ import 'aos/dist/aos.css';
 
 export default function Productsection13() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({
+      duration: 1000,
+      once: true, // animate only once when the element enters the view
+    });
   }, []);
 
   const cards = [
@@ -40,13 +43,11 @@ export default function Productsection13() {
   ];
 
   return (
-    <section
-      className="pb-10"
-      aria-label="Chondroitin Sulfate Sodium Health Benefits"
-    >
+    <section className="pb-10" aria-label="Chondroitin Sulfate Sodium Health Benefits">
       <div className="max-w-7xl mx-auto py-1 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-5 md:px-10 lg:px-5">
-          {/* ✅ Left Content */}
+          
+          {/* Left Content */}
           <div data-aos="fade-right">
             <h1 className="font-bold py-3 text-xl md:text-3xl">
               Health Benefits of Chondroitin Sulfate Sodium
@@ -70,20 +71,16 @@ export default function Productsection13() {
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1pM5TY5flITYDamydaH2p9DkhmVCoEMqrl5rDsM93b33c__8jQXUl9AvmhAQm9U9-Vo&usqp=CAU"
                 alt="Chondroitin sulfate sodium health benefits"
                 className="w-full h-full object-cover rounded-4xl"
+                loading="lazy" // Lazy load the image for better performance
               />
             </div>
           </div>
 
-          {/* ✅ Right Cards & Applications */}
+          {/* Right Cards & Applications */}
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-7 py-5">
               {cards.map((card, index) => (
-                <div
-                  key={index}
-                  className="h-full"
-                  data-aos="zoom-in"
-                  data-aos-delay={index * 100}
-                >
+                <div key={index} className="h-full" data-aos="zoom-in" data-aos-delay={index * 100}>
                   <div className="relative group overflow-hidden bg-gray-100 rounded-3xl h-full flex flex-col justify-between py-10 px-6 transition-transform duration-300 hover:shadow-lg">
                     {/* Green overlay */}
                     <div className="absolute inset-0 bg-green-600 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
@@ -114,7 +111,6 @@ export default function Productsection13() {
                 ))}
               </div>
             </div>
-
           </div>
         </div>
       </div>

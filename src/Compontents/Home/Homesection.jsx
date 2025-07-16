@@ -19,7 +19,6 @@ export default function Homesection() {
     <Home_about/>
     <Home1/>
     <Home_Excellence/>
-    {/* <Infrastructure3/> */}
     <Aboutsection4/>
     <CertificationsSection/>
     </>

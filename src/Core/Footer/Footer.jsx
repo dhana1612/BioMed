@@ -4,16 +4,16 @@ import 'aos/dist/aos.css';
 
 export const Footer = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({
+      duration: 1000, // Animation duration (ms)
+      once: true,     // Only animate once
+    });
   }, []);
 
   return (
     <footer>
       {/* Call to Action */}
-      <div
-        className='py-8 bg-green-600 text-white mb-5'
-        data-aos="fade-up"
-      >
+      <div className='py-8 bg-green-600 text-white mb-5' data-aos="fade-up">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center text-center md:text-left gap-3 px-5 md:px-10 lg:px-5">
           <p className="text-lg md:text-3xl font-medium">
             Give more information regarding our products.

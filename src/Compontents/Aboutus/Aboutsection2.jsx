@@ -54,6 +54,7 @@ export default function Aboutsection2() {
               src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
               alt="Biomed production infrastructure and facility"
               className="w-full h-full object-cover rounded-4xl"
+              loading="lazy" // Lazy load image for better performance
             />
           </div>
         </div>

@@ -21,7 +21,7 @@ export default function Infrastructure2() {
             <h2 className="font-bold py-3 text-lg md:text-2xl">
               Research and Development Facilities
             </h2>
-            <hr aria-hidden="true" />
+            <hr aria-hidden="true" className="border-t-2 border-gray-400" />
 
             <p className="py-3 text-lg md:text-xl">
               Biomed International is equipped with a highly sophisticated R&D facility, backed by a qualified and trained research team, focused on innovation and quality enhancement.
@@ -30,7 +30,7 @@ export default function Infrastructure2() {
             <h2 className="font-bold py-3 text-lg md:text-2xl">
               Manufacturing and Product Packing Facilities
             </h2>
-            <hr aria-hidden="true" />
+            <hr aria-hidden="true" className="border-t-2 border-gray-400" />
 
             <p className="py-3 text-lg md:text-xl">
               We follow rigorous standard operating procedures and quality control systems, ensuring hygienic and controlled environments throughout the facility. All reactors and equipment are fully qualified.
@@ -52,6 +52,7 @@ export default function Infrastructure2() {
               src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
               alt="Biomed R&D and Manufacturing Facility"
               className="w-full h-full object-cover rounded-4xl"
+              loading="lazy" // Lazy load image for better performance
             />
           </div>
 

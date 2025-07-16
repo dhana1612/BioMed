@@ -34,6 +34,7 @@ export default function Aboutsection3() {
                 src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
                 alt="Portrait of Pratap Reddy Maddali"
                 className="w-full h-64 object-cover"
+                loading="lazy" // Lazy load for performance improvement
               />
               <div className="p-4">
                 <p className="font-semibold text-gray-800">Pratap Reddy Maddali</p>
@@ -49,6 +50,7 @@ export default function Aboutsection3() {
                 src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
                 alt="Portrait of Co-founder of Biomed International"
                 className="w-full h-64 object-cover"
+                loading="lazy" // Lazy load for performance improvement
               />
               <div className="p-4">
                 <p className="font-semibold text-gray-800">Pratap Reddy Maddali</p>

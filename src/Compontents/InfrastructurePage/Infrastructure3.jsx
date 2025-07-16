@@ -23,6 +23,7 @@ export default function Infrastructure3() {
               src="https://i.pinimg.com/736x/64/da/8b/64da8bcf754930d03c279d916270cd66.jpg"
               alt="Spray drying equipment used in Biomed facility"
               className="w-full h-full object-cover rounded-4xl"
+              loading="lazy" // Lazy load image for better performance
             />
           </div>
 
@@ -60,6 +61,7 @@ export default function Infrastructure3() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1pM5TY5flITYDamydaH2p9DkhmVCoEMqrl5rDsM93b33c__8jQXUl9AvmhAQm9U9-Vo&usqp=CAU"
                   alt="High-efficiency spray drying process at Biomed"
                   className="w-full h-full object-cover rounded-4xl"
+                  loading="lazy" // Lazy load image for better performance
                 />
               </div>
               <div data-aos="fade-left" data-aos-delay="700">

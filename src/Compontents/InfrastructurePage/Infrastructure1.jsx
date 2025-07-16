@@ -20,6 +20,7 @@ export default function Infrastructure1() {
             src="https://toonzacademy.com/wp-content/uploads/learn-advanced-animation-courses-.webp"
             alt="Biomed International Manufacturing Facility Exterior"
             className="w-full h-full object-cover rounded-4xl"
+            loading="lazy" // Lazy load image for improved performance
           />
         </div>
 

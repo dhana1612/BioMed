@@ -3,25 +3,25 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function Skins_and_joints() {
-      useEffect(() => {
-        AOS.init({
-          duration: 1000,
-          once: true,
-        });
-      }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // Animation duration in ms
+      once: true,      // Animate only once when the element enters the view
+    });
+  }, []);
+
   return (
-        <section
-      className="pb-15"
-      aria-label="Spray Drying Technology at Biomed International"
-    >
+    <section className="pb-15" aria-label="Spray Drying Technology at Biomed International">
       <div className="px-5 md:px-10 lg:px-5 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 md:gap-10">
+          
           {/* Left Image */}
           <div data-aos="fade-right">
             <img
               src="https://i.pinimg.com/736x/64/da/8b/64da8bcf754930d03c279d916270cd66.jpg"
               alt="Spray drying equipment used in Biomed facility"
               className="w-full h-full object-cover rounded-4xl"
+              loading="lazy" // Lazy loading the image for better performance
             />
           </div>
 
@@ -36,10 +36,10 @@ export default function Skins_and_joints() {
             </h2>
 
             <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
-                  <li className="pb-3">The word ‘collagen’ is derived from the Greek word ‘kola,’ meaning glue-producing in the French word, Collagene.</li>
-                  <li className="pb-3">Collagen is a protein made of amino acids that provides structure, support, and strength throughout the body. It’s a building block for bones, skin, hair, muscles, tendons, and ligaments.</li>
-                  <li className="pb-3">Collagen is a fibrous protein, rich in proline and glycine.</li>
-                  <li>It’s a vital part of connective tissue and is highly essential to hold body cells together. Collagen is one of the best possible sources of all essential amino acids.</li>
+              <li className="pb-3">The word ‘collagen’ is derived from the Greek word ‘kola,’ meaning glue-producing in the French word, Collagene.</li>
+              <li className="pb-3">Collagen is a protein made of amino acids that provides structure, support, and strength throughout the body. It’s a building block for bones, skin, hair, muscles, tendons, and ligaments.</li>
+              <li className="pb-3">Collagen is a fibrous protein, rich in proline and glycine.</li>
+              <li>It’s a vital part of connective tissue and is highly essential to hold body cells together. Collagen is one of the best possible sources of all essential amino acids.</li>
             </ul>
 
             {/* Bottom Split Grid */}
@@ -49,6 +49,7 @@ export default function Skins_and_joints() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1pM5TY5flITYDamydaH2p9DkhmVCoEMqrl5rDsM93b33c__8jQXUl9AvmhAQm9U9-Vo&usqp=CAU"
                   alt="High-efficiency spray drying process at Biomed"
                   className="w-full h-full object-cover rounded-4xl"
+                  loading="lazy" // Lazy loading for performance
                 />
               </div>
               <div data-aos="fade-left" data-aos-delay="700">
@@ -62,5 +63,5 @@ export default function Skins_and_joints() {
         </div>
       </div>
     </section>
-  )
+  );
 }

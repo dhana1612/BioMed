@@ -29,10 +29,10 @@ export default function Home1() {
       <div className="bg-gray-200 rounded-2xl py-10 sm:py-14 md:py-16 lg:py-20">
         <div className="px-5 max-w-7xl mx-auto">
 
-          <p className="py-3 text-lg  flex items-center gap-2">
+          <p className="py-3 text-lg flex items-center gap-2">
             <span className="w-3 h-3 rounded-full bg-green-500"></span>
-              Products
-            </p>
+            Products
+          </p>
 
           <p 
             className="text-xl sm:text-2xl md:text-2xl font-bold mb-8"
@@ -48,12 +48,13 @@ export default function Home1() {
                 key={index}
                 className="rounded-2xl overflow-hidden shadow-md relative group"
                 data-aos="zoom-in"
-                data-aos-delay={`${index * 200}`} // stagger effect!
+                data-aos-delay={`${index * 200}`} 
               >
                 <img
                   src={product.image}
                   alt={`${product.name} - Biomed International product`}
                   className="w-full h-60 sm:h-72 md:h-80 lg:h-96 object-cover transform group-hover:scale-105 transition duration-300 ease-in-out"
+                  loading="lazy"
                 />
                 <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded text-sm font-medium">
                   {product.name}

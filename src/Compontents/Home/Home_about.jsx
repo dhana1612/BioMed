@@ -11,26 +11,24 @@ export default function Home_about() {
     <section className="pb-10">
       <div className="rounded-4xl pb-10 md:py-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-10 md:gap-8 px-5 md:px-10 lg:px-5">
+        
+          {/* Image Left */}
+          <div className="col-span-1 lg:col-span-2" data-aos="fade-right">
+            <img
+              src="/Shared/Newfolder/Home_abouts.jpg"
+              alt="Biomed production team working in lab"
+              className="w-full h-full object-cover rounded-4xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90"
+            />
+          </div>
 
-
-        {/* Image Left */}
-        <div className="col-span-1 lg:col-span-2" data-aos="fade-right">
-        <img
-            src="/Shared/Newfolder/Home_abouts.jpg"
-            alt="Biomed production team working in lab"
-            className="w-full h-full object-cover rounded-4xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90"
-        />
-        </div>
-
-        {/* Image Center */}
-        <div className="lg:col-span-3" data-aos="fade-up" data-aos-delay="200">
-        <img
-            src="/Shared/Newfolder/Home_about.jpg"
-            alt="Biomed equipment facility"
-            className="w-full h-full object-cover rounded-4xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90"
-        />
-        </div>
-
+          {/* Image Center */}
+          <div className="lg:col-span-3" data-aos="fade-up" data-aos-delay="200">
+            <img
+              src="/Shared/Newfolder/Home_about.jpg"
+              alt="Biomed equipment facility"
+              className="w-full h-full object-cover rounded-4xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90"
+            />
+          </div>
 
           {/* Text Content */}
           <div
@@ -39,17 +37,16 @@ export default function Home_about() {
             data-aos-delay="400"
           >
             <div>
-                <p className="py-3 text-lg md:text-xl flex items-center gap-2">
+              <p className="py-3 text-lg md:text-xl flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-green-500"></span>
                 Biomed International
-                </p>
-
+              </p>
 
               <h1 className="font-bold py-3 text-xl md:text-3xl">
                 Biomed International: Pioneers in Green Biotechnology
               </h1>
 
-              <p className="py-3 text-base md:text-lg text-gray-700">
+              <p className="py-3 text-lg md:text-xl">
                 At Biomed International, we are dedicated to advancing the life
                 sciences with a commitment to sustainability and quality.
                 Established in 2014, our state-of-the-art facility, located
@@ -64,7 +61,7 @@ export default function Home_about() {
                 both domestically and globally.
               </p>
 
-              <p className="py-3 text-base md:text-lg text-gray-700">
+              <p className="py-3 text-lg md:text-xl ">
                 Our in-house expertise spans from lab-scale development to
                 large-scale production, supported by sophisticated testing and
                 R&D facilities. Equipped with advanced technology such as UV

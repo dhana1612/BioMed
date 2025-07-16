@@ -5,6 +5,7 @@ const Header = () => {
 
   return (
     <>
+
       {/* Top Contact Bar */}
       <div className="flex flex-wrap justify-between items-center px-4 md:px-10 lg:px-20 py-2 text-sm text-gray-700 border-b">
         <div className="flex flex-wrap items-center gap-4 sm:gap-6">
@@ -25,7 +26,7 @@ const Header = () => {
 
       {/* Main Navigation */}
       <nav className="px-4 md:px-10 lg:px-20 py-4 border-b relative z-50" aria-label="Main Navigation">
-        <div className="max-w-7xl mx-auto flex items-center justify-start space-x-6 w-full">
+        <div className="max-w-7xl mx-auto flex items-center justify-between space-x-6 w-full">
           {/* Logo */}
           <a href="/" title="Go to Homepage">
             <img src="/logo.png" alt="Biomed International Logo" className="h-14 object-contain" />
@@ -111,6 +112,7 @@ const Header = () => {
           </div>
         )}
       </nav>
+
     </>
   );
 };

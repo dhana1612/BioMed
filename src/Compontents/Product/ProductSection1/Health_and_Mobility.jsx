@@ -3,25 +3,25 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function Health_and_Mobility() {
-      useEffect(() => {
-        AOS.init({
-          duration: 1000,
-          once: true,
-        });
-      }, []);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
-        <section
-      className="pb-15"
-      aria-label="Spray Drying Technology at Biomed International"
-    >
+    <section className="pb-15" aria-label="Spray Drying Technology at Biomed International">
       <div className="px-5 md:px-10 lg:px-5 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 md:gap-10">
+          
           {/* Left Image */}
           <div data-aos="fade-right">
             <img
               src="https://i.pinimg.com/736x/64/da/8b/64da8bcf754930d03c279d916270cd66.jpg"
               alt="Spray drying equipment used in Biomed facility"
               className="w-full h-full object-cover rounded-4xl"
+              loading="lazy" // Lazy loading for better performance
             />
           </div>
 
@@ -36,13 +36,13 @@ export default function Health_and_Mobility() {
             </h2>
 
             <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
-                  <li className="pb-3">Chondroitin sulfate sodium occurs naturally in the body, and it is also derived from animal sources like bovine cartilage, shark cartilage.</li>
-                  <li className="pb-3">Chondroitin sulfate sodium is also produced synthetically. The word chondroitin comes from the Greek word Chondros, which means cartilage.</li>
-                  <li className="pb-3">Chondroitin sulfate sodium is one type of glycosaminoglycan.</li>
-                  <li className="pb-3">Chondroitin sulfate sodium consists of linear polysaccharide chains; it is composed of repeating disaccharide unit Glucuronic acid (GlcA) and N-acetyl galactosamine (GalNAc).</li>
-                  <li className="pb-3">Chondroitin sulfate sodium is one of the building blocks of cartilage in the joints breakdown. Chondroitin sulfate sodium is a dietary supplement that helps cartilage retain water and gives elasticity.</li>
-                  <li className="pb-3">According to various positions of sulfate, there are different types of Chondroitin sulfate sodium, Chondroitin 4- sulfate, Chondroitin 6- sulfate, Chondroitin 2, 6- sulfate (chondroitin sulfate-D), Chondroitin 4, 6- sulfate (chondroitin sulfate-E); it is extracted and isolated from Squid cartilage for the first time.</li>
-                  <li>Chondroitin sulfate-B is also known as Dermatan sulfate.</li>
+              <li className="pb-3">Chondroitin sulfate sodium occurs naturally in the body, and it is also derived from animal sources like bovine cartilage, shark cartilage.</li>
+              <li className="pb-3">Chondroitin sulfate sodium is also produced synthetically. The word chondroitin comes from the Greek word Chondros, which means cartilage.</li>
+              <li className="pb-3">Chondroitin sulfate sodium is one type of glycosaminoglycan.</li>
+              <li className="pb-3">Chondroitin sulfate sodium consists of linear polysaccharide chains; it is composed of repeating disaccharide unit Glucuronic acid (GlcA) and N-acetyl galactosamine (GalNAc).</li>
+              <li className="pb-3">Chondroitin sulfate sodium is one of the building blocks of cartilage in the joints breakdown. Chondroitin sulfate sodium is a dietary supplement that helps cartilage retain water and gives elasticity.</li>
+              <li className="pb-3">According to various positions of sulfate, there are different types of Chondroitin sulfate sodium, Chondroitin 4- sulfate, Chondroitin 6- sulfate, Chondroitin 2, 6- sulfate (chondroitin sulfate-D), Chondroitin 4, 6- sulfate (chondroitin sulfate-E); it is extracted and isolated from Squid cartilage for the first time.</li>
+              <li>Chondroitin sulfate-B is also known as Dermatan sulfate.</li>
             </ul>
 
             {/* Bottom Split Grid */}
@@ -52,6 +52,7 @@ export default function Health_and_Mobility() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1pM5TY5flITYDamydaH2p9DkhmVCoEMqrl5rDsM93b33c__8jQXUl9AvmhAQm9U9-Vo&usqp=CAU"
                   alt="High-efficiency spray drying process at Biomed"
                   className="w-full h-full object-cover rounded-4xl"
+                  loading="lazy" // Lazy loading for better performance
                 />
               </div>
               <div data-aos="fade-left" data-aos-delay="700">
@@ -68,5 +69,5 @@ export default function Health_and_Mobility() {
         </div>
       </div>
     </section>
-  )
+  );
 }

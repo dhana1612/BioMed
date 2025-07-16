@@ -11,10 +11,11 @@ export default function Contact1() {
   }, []);
 
   return (
-    <section className="py-10 ">
+    <section className="py-10">
       <div className="bg-gray-100 rounded-4xl py-7 md:py-12 lg:py-25">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-5 md:px-10 lg:px-5">
+            
             {/* Contact Info */}
             <div className="veritcalLine py-5" data-aos="fade-up">
               <p className="pb-4 text-lg">Phone Number</p>
@@ -52,6 +53,7 @@ export default function Contact1() {
                 INDIA – 524 421
               </address>
             </div>
+
           </div>
         </div>
       </div>

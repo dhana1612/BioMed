@@ -13,7 +13,7 @@ export default function Contact2() {
   return (
     <section className="py-10" aria-labelledby="contact-section">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-5 md:px-10 lg:px-5 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 px-5 py-3">
 
           {/* Form Column */}
           <div 
@@ -99,7 +99,7 @@ export default function Contact2() {
               className="w-full h-full min-h-[600px] rounded-3xl"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.946708721909!2d78.48667151482155!3d17.385044088079344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb973f3db59cbb%3A0x90d2e5a2c07b8e4b!2sSoubhagya%20Go%20Sadan!5e0!3m2!1sen!2sin!4v1689492751346!5m2!1sen!2sin"
               allowFullScreen=""
-              loading="lazy"
+              loading="lazy" // Lazy load map for better performance
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
