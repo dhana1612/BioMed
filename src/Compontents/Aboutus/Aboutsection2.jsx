@@ -17,7 +17,7 @@ export default function Aboutsection2() {
               Leading the Future of Life Sciences Since 2014
             </h1>
 
-            <ul className="list-disc pl-5 text-lg md:text-xl">
+            <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
               <li className="pb-3">
                 Biomed International is a life science company committed to the well-being of people.
               </li>

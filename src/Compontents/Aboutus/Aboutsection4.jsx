@@ -18,21 +18,22 @@ export default function Aboutsection4() {
       <div className="px-5 max-w-7xl mx-auto">
         {/* Section Title */}
         <div className="py-5" data-aos="fade-up">
-          <p id="what-we-do" className="text-green-600 text-lg md:text-xl">
-            <span className="text-green-500 text-2xl" aria-hidden="true">●</span>{' '}
-            What We Do
-          </p>
+            <p className="py-3 text-lg md:text-xl  flex items-center gap-2">
+            <span className="w-3 h-3 rounded-full bg-green-500"></span>
+               What We Do
+                </p>
         </div>
 
         {/* Content Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-17">
-          <div data-aos="fade-right">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
+
+          <div data-aos="fade-right" className='col-span-2'>
             <h2 className="font-bold text-xl md:text-3xl">
               Empowering Health Through Science and Innovation
             </h2>
           </div>
 
-          <div data-aos="fade-left" data-aos-delay="200">
+          <div data-aos="fade-left" data-aos-delay="200 " className='col-span-3'>
             <p className="text-lg md:text-xl">
               Biomed International is the only company with a drug licence to
               manufacture Chondroitin Sulfate Sodium as an API/Drug in India.

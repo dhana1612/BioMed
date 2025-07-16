@@ -6,11 +6,11 @@ export default function Home1() {
   const products = [
     {
       name: 'Chondroitin Sulfate Sodium',
-      image: '/Shared/images/Image1.jpg',
+      image: '/Shared/Newfolder/Home_abouts.jpg',
     },
     {
       name: 'Collagen',
-      image: '/Shared/images/Image2.jpg',
+      image: '/Shared/Newfolder/Home_abouts.jpg',
     },
   ];
 
@@ -28,14 +28,14 @@ export default function Home1() {
     >
       <div className="bg-gray-200 rounded-2xl py-10 sm:py-14 md:py-16 lg:py-20">
         <div className="px-5 max-w-7xl mx-auto">
+
+          <p className="py-3 text-lg  flex items-center gap-2">
+            <span className="w-3 h-3 rounded-full bg-green-500"></span>
+              Products
+            </p>
+
           <p 
-            className="text-green-600 text-lg sm:text-xl font-medium mb-2"
-            data-aos="fade-up"
-          >
-            • Products
-          </p>
-          <p 
-            className="text-xl sm:text-2xl md:text-3xl font-bold mb-8"
+            className="text-xl sm:text-2xl md:text-2xl font-bold mb-8"
             data-aos="fade-up"
             data-aos-delay="100"
           >

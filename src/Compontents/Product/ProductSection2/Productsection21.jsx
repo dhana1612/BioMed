@@ -7,10 +7,16 @@ export default function Productsection21() {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
+   const applications = [
+    "Type I: Tendon, cornea",
+    "Type II: Cartilage",
+    "Type III: Blood vessels",
+  ];
+
   return (
     <section>
       <div className="bg-gray-200 rounded-4xl py-10 md:py-20 my-5">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-7 px-5 md:px-10 lg:px-5">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-7 px-5 md:px-10 lg:px-5">
 
           {/* Collagen Structure */}
           <div data-aos="fade-right">
@@ -24,39 +30,34 @@ export default function Productsection21() {
           </div>
 
           {/* Company Introduction */}
-          <div className="py-3 col-span-2" data-aos="fade-left">
+          <div className="py-3" data-aos="fade-left">
             <h2 className="font-bold py-3 text-xl md:text-3xl">
-              Leading the Future of Life Sciences Since 2014
+              Function of Collagen
             </h2>
-            <ul className="list-disc pl-5 text-lg md:text-xl">
-              <li className="pb-3">
-                Biomed International is a life science company committed to the well-being of people.
-              </li>
-              <li className="pb-3">
-                Trusted partner for leading pharmaceutical, nutraceutical, and food supplement companies in India and globally.
-              </li>
-              <li className="pb-3">
-                Dedicated to delivering high-quality products in both domestic and international markets.
-              </li>
-              <li className="pb-3">
-                Established in 2014, with commercial production starting in 2016, the company is located on 4 acres of lush green land.
-              </li>
-              <li className="pb-3">
-                Strategically located 10 km from National Highway 45, near Gudur railway junction, and 150 km from Chennai International Airport and seaport.
-              </li>
-              <li className="pb-3">
-                Manufactures Chondroitin Sulfate Sodium (USP/BP grade) and various types of collagen: fish, bovine, and chicken.
-              </li>
-              <li className="pb-3">
-                In-house testing laboratory and R&D facility equipped with imported instruments like UV Spectrophotometer, Digital Polarimeter (21 CFR compliant), GC, and HPLC.
-              </li>
-              <li className="pb-3">
-                Equipped with stability chambers maintained at different temperatures.
-              </li>
-              <li className="pb-3">
-                Manufacturing includes specialized facilities like Spray Dryers and Agitated Nutsche Filter Dryers (ANFDs).
-              </li>
+            <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
+                  <li className="pb-3">Collagen is rigid and resistant to stretching for skin, also provides strength and elasticity.</li>
+                  <li className="pb-3">Collagen interacts directly with cells in at least three distinctive ways.</li>
+                  <li className="pb-3">Interacts with receptors that recognize an Arg-Gly-Asp-Thy sequence.</li>
+                   <li className="pb-3">Through adhesive proteins such as fibronectin and laminin.</li>
+                  <li className="pb-3">Via proteoglycans.</li>
+                  <li className="pb-3">Provides flexibility, support, and movement to cartilage.</li>
+                   <li className="pb-3">Strength, support, shape, and elasticity to the tissues.</li>
+                  <li className="pb-3">Collagen fills the sclera of the eye in crystalline form.</li>
+                  <li>Collagen protects delicate organs like kidneys and spleen.</li>
             </ul>
+
+            <h2 className="font-bold py-3 text-base md:text-lg">
+              The collagen can be divided into two groups: Fibrillar Collagen and Non-Fibrillar Collagen
+            </h2>
+
+            <div className="flex flex-wrap gap-x-10 gap-y-4">
+                {applications.map((item, idx) => (
+                  <div key={idx} className="flex items-center gap-2">
+                    <span className="w-2 h-2 rounded-full bg-green-600"></span>
+                    <p className="text-md md:text-lg">{item}</p>
+                  </div>
+                ))}
+              </div>
           </div>
 
         </div>

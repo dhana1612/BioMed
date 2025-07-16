@@ -38,24 +38,21 @@ export default function CertificationsSection() {
       <div className="px-5 md:px-10 lg:px-5 max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="mb-10">
-          <p
-            className="text-green-600 text-lg md:text-xl font-medium flex items-center gap-2"
-            data-aos="fade-up"
-          >
-            <span className="w-3 h-3 bg-green-500 rounded-full inline-block" />
-            Our Certifications
-          </p>
+           <p className="py-3 text-lg md:text-xl  flex items-center gap-2">
+            <span className="w-3 h-3 rounded-full bg-green-500"></span>
+               Our Certifications
+                </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 mt-4">
             <h2
-              className="text-2xl md:text-3xl font-semibold"
+              className="text-2xl md:text-3xl font-semibold col-span-2"
               data-aos="fade-right"
               data-aos-delay="100"
             >
               Global Standards, Proven Excellence
             </h2>
             <p
-              className="text-gray-700 text-lg md:text-xl max-w-2xl"
+              className="text-gray-700 text-lg md:text-xl max-w-2xl col-span-3"
               data-aos="fade-left"
               data-aos-delay="200"
             >
@@ -64,6 +61,7 @@ export default function CertificationsSection() {
               to our adherence to international regulatory standards and our
               pursuit of excellence across all operations.
             </p>
+
           </div>
         </div>
 

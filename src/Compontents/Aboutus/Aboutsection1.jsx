@@ -10,9 +10,9 @@ export default function Aboutsection1() {
   return (
     <section className="pb-10">
       <div className="rounded-4xl pb-10 md:py-20 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-6 gap-10 md:gap-8 px-5 md:px-10 lg:px-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-10 md:gap-8 px-5 md:px-10 lg:px-5">
           {/* Image Left */}
-          <div className="col-span-2 md:col-span-1" data-aos="fade-right">
+          <div className="col-span-1 lg:col-span-2" data-aos="fade-right">
             <img
               src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
               alt="Biomed production team working in lab"
@@ -21,7 +21,7 @@ export default function Aboutsection1() {
           </div>
 
           {/* Image Center */}
-          <div className="col-span-2" data-aos="fade-up" data-aos-delay="200">
+          <div className="lg:col-span-3" data-aos="fade-up" data-aos-delay="200">
             <img
               src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
               alt="Biomed equipment facility"
@@ -30,8 +30,11 @@ export default function Aboutsection1() {
           </div>
 
           {/* Text Content */}
-          <div className="py-3 col-span-3" data-aos="fade-left" data-aos-delay="400">
-            <p className="py-3 text-lg md:text-xl">Who We Are</p>
+          <div className="py-3 md:col-span-2 lg:col-span-4" data-aos="fade-left" data-aos-delay="400">
+            <p className="py-3 text-lg md:text-xl  flex items-center gap-2">
+              <span className="w-3 h-3 rounded-full bg-green-500"></span>
+                 What We Do
+            </p>
 
             <h1 className="font-bold py-3 text-xl md:text-3xl">
               Biomed International: Pioneers in Green Biotechnology
@@ -57,7 +60,7 @@ export default function Aboutsection1() {
 
               <div data-aos="zoom-in" data-aos-delay="700">
                 <h5 className="font-bold py-3 text-md md:text-xl">Our Vision</h5>
-                <ul className="list-disc pl-5 text-md md:text-lg">
+                <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
                   <li className="pb-3">Quality is our first priority — improve quality, automatically improve production.</li>
                   <li className="pb-3">We believe in customer satisfaction and lasting relationships.</li>
                   <li>To provide the best clinical trials for efficacy and safety of products.</li>

@@ -13,101 +13,47 @@ export default function Productsection12() {
   return (
     <section className="pt-1 md:pt-20">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 px-5 md:px-10 lg:px-5 h-260">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 px-5 md:px-10 lg:px-5 ">
           {/* Left Static Block */}
           <div data-aos="fade-right">
-            <h1 className="font-bold text-xl md:text-3xl">Structure of Collagen</h1>
+            <h1 className="font-bold text-xl md:text-3xl">Molecular Structure:</h1>
             <p className="py-3 text-lg md:text-xl">
-              Chemical formula: C4H6N2O3R2. (C7H9N2O2R)n
+              Chemical structure of chondroitin sulfate sodium chain. Chondroitin-4-sulfate: R1 = H; R2 = SO3H; R3 = H. Chondroitin-6-sulfate: R1 = SO3H; R2, R3 = H.
             </p>
             <p className="py-3 text-lg md:text-xl">
-              <span>CAS Number:</span> 9007-34-5
+              <span className="font-bold py-3 text-base md:text-lg">Molecular formula:</span>  C14H22NaO16S
             </p>
           </div>
 
           {/* Right Scrollable Block */}
-          <div className="overflow-y-scroll no-scrollbar scroll-smooth col-span-2 h-[1000px]">
-            <div data-aos="fade-up">
-              <h1 className="font-bold py-3 text-xl md:text-3xl">
-                Core Capabilities or Distinctive Competencies.
-              </h1>
+          <div className="overflow-y-scroll no-scrollbar scroll-smooth col-span-1  h-[800px]">
+            <div data-aos="fade-up ">
+                <h5 className="font-bold py-3 text-md md:text-xl">CAS NO: 9082-07-9</h5>
+                <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
+                  <li className="pb-3">Chondroitin sulfate sodium is enzymatically dissolved, precipitated, crystallized, dried, and finally gets the finished product.</li>
+                  <li className="pb-3">It is a white/off-white/pale yellow-colored powder, odorless, and tasteless. Easily soluble in water, insoluble in ethanol, acetone, and other organic solvents.</li>
+                  <li>Chondroitin sulfate sodium is a hygroscopic powder.</li>
+                </ul>
 
-              <h1 className="font-bold py-3 text-xl md:text-3xl">
-                Research and Development facilities
-              </h1>
-              <hr />
+                <h5 className="font-bold py-3 text-md md:text-xl">Complex properties of Chondroitin sulfate sodium:</h5>
+                <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
+                  <li className="pb-3">Chondroitin sulfate sodium is a kind of negatively charged polysaccharide, and it has many free carboxyl and sulfate groups throughout its chain.</li>
+                  <li>Chondroitin sulfate sodium could interact with metal ions and some other substrates with a positive charge..</li>
+                </ul>
 
-              <p className="py-3 text-lg md:text-xl">
-                Biomed International has a well equipped R&D (Research and Development)
-                facility with a sophisticated, trained, and qualified team.
-              </p>
+
+                <h5 className="font-bold py-3 text-md md:text-xl">Complex properties of Chondroitin sulfate sodium:</h5>
+                <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
+                  <li className="pb-3">Chondroitin sulfate sodium primarily protects collagen fibers, promotes the growth of fibers in the matrix, and improves blood circulation.</li>
+                  <li className="pb-3">It facilitates the absorption of serums and the reduction of inflammation.</li>
+                  <li className="pb-3">In cartilage, chondroitin binds collagen and holds fibers in a tight, strong network.</li>
+                  <li>Chondroitin sulfate sodium is an anti-coagulant (blood thinner) because it is similar to Heparin. It also improves blood thinning effects.
+
+</li>
+                </ul>
+            
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="200">
-              <h1 className="font-bold py-3 text-2xl">
-                Manufacturing facilities & Product packing facilities
-              </h1>
-              <hr />
-
-              <p className="py-3 text-lg md:text-xl">
-                Biomed International adheres to standardized operating procedures
-                and robust quality control systems, ensuring hygienic and controlled
-                conditions throughout the plant. We maintain strict qualifications
-                for all reactors and equipment.
-              </p>
-              <p className="py-3 text-lg md:text-xl">
-                Our plant features a specialized block dedicated to the manufacturing
-                and packing of products. A distinct area is allocated for essential
-                equipment, including dryers, mills, blenders, ANFD, and spray dryers.
-              </p>
-              <p className="py-3 text-lg md:text-xl">
-                Biomed International adheres to standardized operating procedures
-                and robust quality control systems, ensuring hygienic and controlled
-                conditions throughout the plant. We maintain strict qualifications
-                for all reactors and equipment.
-              </p>
-              <p className="py-3 text-lg md:text-xl">
-                Our plant features a specialized block dedicated to the manufacturing
-                and packing of products. A distinct area is allocated for essential
-                equipment, including dryers, mills, blenders, ANFD, and spray dryers.
-              </p>
-              <p className="py-3 text-lg md:text-xl">
-                The Agitated Nutsche Filter is state-of-the-art equipment designed to
-                streamline crystallization and drying while minimizing human contact
-                during final product isolation. This advanced system ensures high
-                quality output and provides environmental protection by minimizing
-                solvent vaporization.
-              </p>
-              <p className="py-3 text-lg md:text-xl">
-                The Agitated Nutsche Filter efficiently separates solids from liquids
-                using pressure or vacuum drying within a closed system. It is used
-                for filtration, washing, and drying in both pharmaceutical and food
-                industries.
-              </p>
-                            <p className="py-3 text-lg md:text-xl">
-                The Agitated Nutsche Filter is state-of-the-art equipment designed to
-                streamline crystallization and drying while minimizing human contact
-                during final product isolation. This advanced system ensures high
-                quality output and provides environmental protection by minimizing
-                solvent vaporization.
-              </p>
-              <p className="py-3 text-lg md:text-xl">
-                The Agitated Nutsche Filter efficiently separates solids from liquids
-                using pressure or vacuum drying within a closed system. It is used
-                for filtration, washing, and drying in both pharmaceutical and food
-                industries.
-              </p>
-            </div>
-
-            <div data-aos="fade-up" data-aos-delay="400">
-              <h1 className="font-bold py-3 text-xl md:text-3xl">
-                Another Section Example
-              </h1>
-
-              <p className="py-3 text-lg md:text-xl">
-                This is an extra block to demonstrate scroll animations continuing as you scroll.
-              </p>
-            </div>
           </div>
         </div>
 
