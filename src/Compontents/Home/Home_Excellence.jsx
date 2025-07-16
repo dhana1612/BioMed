@@ -18,7 +18,7 @@ export default function Home_Excellence() {
           {/* Left Image */}
           <div data-aos="fade-right">
             <img
-              src="https://i.pinimg.com/736x/64/da/8b/64da8bcf754930d03c279d916270cd66.jpg"
+              src="/Shared/Newfolder/IMG_20250625_144910.jpg"
               alt="Spray drying equipment used in Biomed facility"
               className="w-full h-full object-cover rounded-4xl"
               loading="lazy"
@@ -40,70 +40,75 @@ export default function Home_Excellence() {
               At the forefront of green biotechnology, we specialize in the development and production of high-purity Chondroitin Sulfate Sodium and Collagen, designed to meet the evolving needs of the pharmaceutical, nutraceutical, and cosmetic industries.
             </p>
 
-            {/* Bottom Split Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-7">
-              <div data-aos="fade-left" data-aos-delay="700">
-                <div className="flex items-center space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-green-600 transition-colors duration-500 group-hover:bg-white">
-                    <Heart className="w-6 h-6 text-white group-hover:text-green-600 transition-colors duration-500" />
-                  </div>
-                  <p className="py-3 text-lg md:text-xl font-bold">Innovation</p>
-                </div>
-                <p className="py-3 text-lg md:text-xl">
-                  Due to its efficiency and reliability, spray drying is widely used in both food and pharmaceutical industries, offering consistent quality and superior results over traditional drying methods.
-                </p>
-              </div>
+{/* Bottom Split Grid */}
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-7">
+  {/* Left Column */}
+  <div data-aos="fade-left" data-aos-delay="700" className="flex flex-col">
+    <div className="flex items-center space-x-4">
+      <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-green-600 transition-colors duration-500 group-hover:bg-white">
+        <Heart className="w-6 h-6 text-white group-hover:text-green-600 transition-colors duration-500" />
+      </div>
+      <p className="py-3 text-lg md:text-xl font-bold">Innovation</p>
+    </div>
+    <p className="py-3 text-lg md:text-xl">
+      Due to its efficiency and reliability, spray drying is widely used in both food and pharmaceutical industries, offering consistent quality and superior results over traditional drying methods.
+    </p>
+  </div>
 
-              <div data-aos="fade-left" data-aos-delay="700">
-                <div className="flex items-center space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-green-600 transition-colors duration-500 group-hover:bg-white">
-                    <Heart className="w-6 h-6 text-white group-hover:text-green-600 transition-colors duration-500" />
-                  </div>
-                  <p className="py-3 text-lg md:text-xl font-bold">Quality</p>
-                </div>
-                <p className="py-3 text-lg md:text-xl">
-                  Due to its efficiency and reliability, spray drying is widely used in both food and pharmaceutical industries, offering consistent quality and superior results over traditional drying methods.
-                </p>
-              </div>
+  {/* Right Column */}
+  <div data-aos="fade-left" data-aos-delay="700" className="flex flex-col">
+    <div className="flex items-center space-x-4">
+      <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-green-600 transition-colors duration-500 group-hover:bg-white">
+        <Heart className="w-6 h-6 text-white group-hover:text-green-600 transition-colors duration-500" />
+      </div>
+      <p className="py-3 text-lg md:text-xl font-bold">Quality</p>
+    </div>
+    <p className="py-3 text-lg md:text-xl">
+      Due to its efficiency and reliability, spray drying is widely used in both food and pharmaceutical industries, offering consistent quality and superior results over traditional drying methods.
+    </p>
+  </div>
 
-              {/* Image */}
-              <div data-aos="zoom-in" data-aos-delay="600">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1pM5TY5flITYDamydaH2p9DkhmVCoEMqrl5rDsM93b33c__8jQXUl9AvmhAQm9U9-Vo&usqp=CAU"
-                  alt="High-efficiency spray drying process at Biomed"
-                  className="w-full h-full object-cover rounded-4xl"
-                  loading="lazy"
-                />
-              </div>
+  {/* Image Section (Centering it between the two columns, with flexbox to maintain consistent height) */}
+  <div data-aos="zoom-in" data-aos-delay="600" className="flex justify-center items-center">
+    <img
+      src="/Shared/Newfolder/DJI_20250706172815_0054_D.JPG"
+      alt="High-efficiency spray drying process at Biomed"
+      className="w-full h-auto max-h-[400px] object-cover rounded-4xl"
+      loading="lazy"
+    />
+  </div>
 
-              <div data-aos="fade-left" data-aos-delay="700">
-                <div className="flex items-center space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-green-600 transition-colors duration-500 group-hover:bg-white">
-                    <Heart className="w-6 h-6 text-white group-hover:text-green-600 transition-colors duration-500" />
-                  </div>
-                  <p className="py-3 text-lg md:text-xl font-bold">Sustainability</p>
-                </div>
-                <p className="py-3 text-lg md:text-xl">
-                  Due to its efficiency and reliability, spray drying is widely used in both food and pharmaceutical industries, offering consistent quality and superior results over traditional drying methods.
-                </p>
+  {/* Left Column (Sustainability section) */}
+  <div data-aos="fade-left" data-aos-delay="700" className="flex flex-col">
+    <div className="flex items-center space-x-4">
+      <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-green-600 transition-colors duration-500 group-hover:bg-white">
+        <Heart className="w-6 h-6 text-white group-hover:text-green-600 transition-colors duration-500" />
+      </div>
+      <p className="py-3 text-lg md:text-xl font-bold">Sustainability</p>
+    </div>
+    <p className="py-3 text-lg md:text-xl">
+      Due to its efficiency and reliability, spray drying is widely used in both food and pharmaceutical industries, offering consistent quality and superior results over traditional drying methods.
+    </p>
 
-                <button
-                  type="submit"
-                  className="w-fit relative group flex items-center gap-3 px-3 py-3 border border-green-600 rounded-full text-black font-medium overflow-hidden transition-colors duration-300"
-                  aria-label="Submit contact form"
-                >
-                  <span className="absolute inset-0 bg-green-600 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out rounded-full"></span>
-                  <span className="relative z-10 group-hover:text-white transition-colors duration-300">
-                    Let's Connect
-                  </span>
-                  <div className="relative z-10 flex items-center justify-center w-7 h-7 rounded-full bg-green-600 group-hover:bg-white transition-colors duration-300">
-                    <span className="text-white group-hover:text-green-600 transition-colors duration-300">
-                      &#10140;
-                    </span>
-                  </div>
-                </button>
-              </div>
-            </div>
+    {/* Button */}
+    <button
+      type="submit"
+      className="w-fit relative group flex items-center gap-3 px-3 py-3 border border-green-600 rounded-full text-black font-medium overflow-hidden transition-colors duration-300"
+      aria-label="Submit contact form"
+    >
+      <span className="absolute inset-0 bg-green-600 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out rounded-full"></span>
+      <span className="relative z-10 group-hover:text-white transition-colors duration-300">
+        Let's Connect
+      </span>
+      <div className="relative z-10 flex items-center justify-center w-7 h-7 rounded-full bg-green-600 group-hover:bg-white transition-colors duration-300">
+        <span className="text-white group-hover:text-green-600 transition-colors duration-300">
+          &#10140;
+        </span>
+      </div>
+    </button>
+  </div>
+</div>
+
           </div>
         </div>
       </div>

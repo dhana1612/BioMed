@@ -16,7 +16,7 @@ export default function AboutHerosection() {
       aria-label="Contact Page Hero Section"
       style={{
         backgroundImage:
-          "url('https://images.theconversation.com/files/675612/original/file-20250620-56-novrkv.jpg?ixlib=rb-4.1.0&rect=300%2C0%2C5340%2C2567&q=45&auto=format&w=668&h=324&fit=crop')",
+          "url('/Shared/Newfolder/DJI_20250706172815_0054_D.JPG')",
         backgroundSize: "cover",
         backgroundPosition: "center"
       }}
