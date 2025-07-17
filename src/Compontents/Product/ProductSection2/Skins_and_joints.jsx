@@ -18,7 +18,7 @@ export default function Skins_and_joints() {
           {/* Left Image */}
           <div data-aos="fade-right" className='col-span-2'>
             <img
-              src="https://i.pinimg.com/736x/64/da/8b/64da8bcf754930d03c279d916270cd66.jpg"
+              src="/Shared/Newfolder/CSS_Section.jpg"
               alt="Spray drying equipment used in Biomed facility"
               className="w-full h-full object-cover rounded-4xl"
               loading="lazy" // Lazy loading the image for better performance

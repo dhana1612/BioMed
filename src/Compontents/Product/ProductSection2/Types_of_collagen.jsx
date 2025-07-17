@@ -155,20 +155,7 @@ export default function Types_of_collagen() {
           </div>
         </div>
 
-        {/* YouTube Embed */}
-        <div className="md:px-10 lg:px-5 py-10" data-aos="fade-up">
-          <div className="relative w-full" style={{ paddingTop: '40%' }}>
-            <iframe
-              className="absolute top-0 left-0 w-full h-full rounded-xl"
-              src="https://www.youtube.com/embed/"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
+
       </div>
     </section>
   );

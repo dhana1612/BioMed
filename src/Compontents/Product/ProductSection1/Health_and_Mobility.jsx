@@ -18,7 +18,7 @@ export default function Health_and_Mobility() {
           {/* Left Image */}
           <div data-aos="fade-right" className='col-span-2'>
             <img
-              src="/Shared/Newfolder/improve_joints.jpeg"
+              src="/Shared/Newfolder/CSS_Section.jpg"
               alt="Spray drying equipment used in Biomed facility"
               className="w-full h-full object-cover rounded-4xl"
               loading="lazy" // Lazy loading for better performance
