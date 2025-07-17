@@ -13,12 +13,12 @@ export default function Health_and_Mobility() {
   return (
     <section className="pb-15" aria-label="Spray Drying Technology at Biomed International">
       <div className="px-5 md:px-10 lg:px-5 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 md:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-7 md:gap-10">
           
           {/* Left Image */}
-          <div data-aos="fade-right">
+          <div data-aos="fade-right" className='col-span-2'>
             <img
-              src=""
+              src="/Shared/Newfolder/improve_joints.jpeg"
               alt="Spray drying equipment used in Biomed facility"
               className="w-full h-full object-cover rounded-4xl"
               loading="lazy" // Lazy loading for better performance
@@ -26,7 +26,7 @@ export default function Health_and_Mobility() {
           </div>
 
           {/* Right Text Section */}
-          <div className="col-span-2" data-aos="fade-left">
+          <div className="col-span-3" data-aos="fade-left">
             <h1 className="font-bold py-3 text-xl md:text-3xl" data-aos="fade-up" data-aos-delay="100">
               Improves Your Joints Health and Mobility.
             </h1>

@@ -31,7 +31,7 @@ export default function Aboutsection3() {
           <div data-aos="fade-up" data-aos-delay="200">
             <div className="bg-white rounded-xl shadow-sm overflow-hidden">
               <img
-                src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
+                src="/Shared/Newfolder/Person1.jpeg"
                 alt="Portrait of Pratap Reddy Maddali"
                 className="w-full h-64 object-cover"
                 loading="lazy" // Lazy load for performance improvement
@@ -47,7 +47,7 @@ export default function Aboutsection3() {
           <div data-aos="fade-up" data-aos-delay="400">
             <div className="bg-white rounded-xl shadow-sm overflow-hidden">
               <img
-                src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
+                src="/Shared/Newfolder/Person2.jpg"
                 alt="Portrait of Co-founder of Biomed International"
                 className="w-full h-64 object-cover"
                 loading="lazy" // Lazy load for performance improvement

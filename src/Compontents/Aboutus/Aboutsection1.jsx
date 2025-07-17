@@ -12,13 +12,36 @@ export default function Aboutsection1() {
       <div className="rounded-4xl pb-10 md:py-20 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-10 md:gap-8 px-5 md:px-10 lg:px-5">
           {/* Image Left */}
-          <div className="col-span-1 lg:col-span-2" data-aos="fade-right">
-            <img
-              src="/Shared/Newfolder/IMG_20250625_144910.jpg"
-              alt="Biomed production team working in lab"
-              className="w-full h-full object-cover rounded-4xl"
-              loading="lazy" // Lazy load images for performance
-            />
+          <div className="col-span-1 lg:col-span-2 h-full" data-aos="fade-right">
+            <div className="h-full flex flex-col justify-between">
+              <div className='bg-gray-200 py-10 px-5 rounded-4xl'>
+                {/* Profile images */}
+                <div className="flex -space-x-3">
+                  <div className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center text-white font-semibold">
+                    C1
+                  </div>
+                  <div className="w-12 h-12 rounded-full bg-gray-400 flex items-center justify-center text-white font-semibold">
+                    C2
+                  </div>
+                  <div className="w-12 h-12 rounded-full bg-gray-500 flex items-center justify-center text-white font-semibold">
+                    C3
+                  </div>
+                </div>
+                {/* Add icon and Customers text */}
+                <div className="flex items-center space-x-2 py-1 px-3">
+                  <div className="w-20 h-16 bg-green-500 text-white rounded-full flex items-center justify-center ">
+                    <span className="md:text-xl font-semibold">+</span>
+                  </div>
+                  <span className="text-gray-600 text-lg md:text-xl">50K+ Customers</span>
+                </div>
+              </div>
+              {/* Image */}
+              <img
+                src="/Shared/Newfolder/About.jpeg"
+                alt="Biomed production team working in lab"
+                className="w-full h-full pt-10 object-cover object-center rounded-4xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90"
+              />
+            </div>
           </div>
 
           {/* Image Center */}
