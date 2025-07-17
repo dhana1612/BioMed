@@ -42,7 +42,7 @@ export const Footer = () => {
       {/* Logo & Tagline */}
       <div className="pb-7" data-aos="fade-up" data-aos-delay="300">
         <div className="max-w-7xl mx-auto px-5 md:px-10 lg:px-5">
-          <img src="/logo.png" alt="Biomed International Logo" className="h-12 sm:h-14 pt-2" loading="lazy" />
+          <img src="/Shared/Newfolder/logo.png" alt="Biomed International Logo" className="h-40 pt-2" loading="lazy" />
           <h3 className="text-2xl sm:text-3xl md:text-4xl font-medium py-2">
             We are happy to serve you.
           </h3>

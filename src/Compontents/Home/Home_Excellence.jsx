@@ -14,11 +14,12 @@ export default function Home_Excellence() {
   return (
     <section className="pb-15" aria-label="Spray Drying Technology at Biomed International">
       <div className="px-5 md:px-10 lg:px-5 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 md:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-7 md:gap-10">
+
           {/* Left Image */}
-          <div data-aos="fade-right">
+          <div data-aos="fade-right" className='col-span-2'>
             <img
-              src="/Shared/Newfolder/IMG_20250625_144910.jpg"
+              src="/Shared/Newfolder/Excellence1.jpeg"
               alt="Spray drying equipment used in Biomed facility"
               className="w-full h-full object-cover rounded-4xl"
               loading="lazy"
@@ -26,7 +27,7 @@ export default function Home_Excellence() {
           </div>
 
           {/* Right Text Section */}
-          <div className="col-span-2" data-aos="fade-left">
+          <div className="col-span-3" data-aos="fade-left">
             <p className="py-3 text-lg md:text-xl flex items-center gap-2">
               <span className="w-3 h-3 rounded-full bg-green-500"></span>
               Our Pillars of Excellence
@@ -71,7 +72,7 @@ export default function Home_Excellence() {
   {/* Image Section (Centering it between the two columns, with flexbox to maintain consistent height) */}
   <div data-aos="zoom-in" data-aos-delay="600" className="flex justify-center items-center">
     <img
-      src="/Shared/Newfolder/DJI_20250706172815_0054_D.JPG"
+      src="/Shared/Newfolder/Excellence.jpg"
       alt="High-efficiency spray drying process at Biomed"
       className="w-full h-auto max-h-[400px] object-cover rounded-4xl"
       loading="lazy"

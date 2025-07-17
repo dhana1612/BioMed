@@ -25,12 +25,13 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="px-4 md:px-10 lg:px-20 py-4 border-b relative z-50" aria-label="Main Navigation">
+      <nav className="px-4 md:px-10 lg:px-20  border-b relative z-50" aria-label="Main Navigation">
         <div className="max-w-7xl mx-auto flex items-center justify-between space-x-6 w-full">
           {/* Logo */}
-          <a href="/" title="Go to Homepage">
-            <img src="/logo.png" alt="Biomed International Logo" className="h-14 object-contain" />
-          </a>
+        <a href="/" title="Go to Homepage">
+          <img src="/Shared/Newfolder/logo.png" alt="Biomed International Logo" className="h-40 object-contain" />
+        </a>
+
 
           {/* Hamburger */}
           <button
