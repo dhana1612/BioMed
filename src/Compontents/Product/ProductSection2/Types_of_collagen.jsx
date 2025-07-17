@@ -63,7 +63,7 @@ export default function Types_of_collagen() {
               <h5 className="font-bold py-3 text-md md:text-xl">Chemical structure of Type-I Collagen</h5>
               <div className="h-96 overflow-hidden rounded-xl py-3">
                 <img
-                  src="/Shared/Newfolder/Home_abouts.jpg"
+                  src="/Shared/Newfolder/collagen structure.png"
                   alt="Chemical structure of Type-I collagen"
                   className="w-full h-full object-cover rounded-xl"
                   loading="lazy" // Lazy load the image for better performance
@@ -113,7 +113,7 @@ export default function Types_of_collagen() {
               <h5 className="font-bold py-3 text-md md:text-xl">Chemical structure of Type-I Collagen</h5>
               <div className="h-96 overflow-hidden rounded-xl py-3">
                 <img
-                  src="/Shared/Newfolder/Home_abouts.jpg"
+                  src="/Shared/Newfolder/collagen structure.png"
                   alt="Chemical structure of Type-II collagen"
                   className="w-full h-full object-cover rounded-xl"
                   loading="lazy"

@@ -51,7 +51,7 @@ export default function Aboutsection2() {
           {/* Image Section */}
           <div data-aos="fade-left" data-aos-delay="200">
             <img
-              src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
+              src="/Shared/Newfolder/DJI_20250706172815_0054_D.JPG"
               alt="Biomed production infrastructure and facility"
               className="w-full h-full object-cover rounded-4xl"
               loading="lazy" // Lazy load image for better performance

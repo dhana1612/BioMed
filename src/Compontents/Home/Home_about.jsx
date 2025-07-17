@@ -15,7 +15,7 @@ export default function Home_about() {
           {/* Image Left */}
           <div className="col-span-1 lg:col-span-2" data-aos="fade-right">
             <img
-              src="/Shared/Newfolder/Home_abouts.jpg"
+              src="/Shared/Newfolder/home1.png"
               alt="Biomed production team working in lab"
               className="w-full h-full object-cover rounded-4xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90"
             />

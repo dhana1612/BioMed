@@ -18,7 +18,7 @@ export default function Health_and_Mobility() {
           {/* Left Image */}
           <div data-aos="fade-right">
             <img
-              src="https://i.pinimg.com/736x/64/da/8b/64da8bcf754930d03c279d916270cd66.jpg"
+              src=""
               alt="Spray drying equipment used in Biomed facility"
               className="w-full h-full object-cover rounded-4xl"
               loading="lazy" // Lazy loading for better performance
@@ -49,7 +49,7 @@ export default function Health_and_Mobility() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-7">
               <div data-aos="zoom-in" data-aos-delay="600">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1pM5TY5flITYDamydaH2p9DkhmVCoEMqrl5rDsM93b33c__8jQXUl9AvmhAQm9U9-Vo&usqp=CAU"
+                  src="/Shared/Newfolder/joint-injuries-of-the-body.jpg"
                   alt="High-efficiency spray drying process at Biomed"
                   className="w-full h-full object-cover rounded-4xl"
                   loading="lazy" // Lazy loading for better performance

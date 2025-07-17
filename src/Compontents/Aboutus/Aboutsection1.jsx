@@ -14,7 +14,7 @@ export default function Aboutsection1() {
           {/* Image Left */}
           <div className="col-span-1 lg:col-span-2" data-aos="fade-right">
             <img
-              src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
+              src="/Shared/Newfolder/IMG_20250625_144910.jpg"
               alt="Biomed production team working in lab"
               className="w-full h-full object-cover rounded-4xl"
               loading="lazy" // Lazy load images for performance
@@ -24,7 +24,7 @@ export default function Aboutsection1() {
           {/* Image Center */}
           <div className="lg:col-span-3" data-aos="fade-up" data-aos-delay="200">
             <img
-              src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
+              src="/Shared/Newfolder/IMG_20250625_143208.jpg"
               alt="Biomed equipment facility"
               className="w-full h-full object-cover rounded-4xl"
               loading="lazy"

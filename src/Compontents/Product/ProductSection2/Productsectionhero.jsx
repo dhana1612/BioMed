@@ -13,7 +13,7 @@ useEffect(() => {
   return (
     <header className="my-15 mx-5 lg:mx-20 rounded-4xl" aria-label="Contact Page Hero Section" style={{
             backgroundImage:
-                "url('/Shared/Newfolder/DJI_20250706172815_0054_D.JPG')",
+                "url('/Shared/Newfolder/Collagen_BG1.png')",
               backgroundSize: "cover",
               backgroundPosition: "center"
             }}>
@@ -26,7 +26,7 @@ useEffect(() => {
           data-aos="fade-down"
         >
           <h1 
-            className=" font-bold text-white text-3xl md:text-5xl lg:text-7xl"
+            className=" font-bold text-gray-300 text-3xl md:text-5xl lg:text-7xl"
             data-aos="slide-up"
             data-aos-delay="300"
           >

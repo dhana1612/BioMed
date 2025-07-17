@@ -17,7 +17,7 @@ export default function Infrastructure1() {
         {/* Image Section */}
         <div data-aos="fade-right">
           <img
-            src="https://toonzacademy.com/wp-content/uploads/learn-advanced-animation-courses-.webp"
+            src="/Shared/Newfolder/IMG_20250625_143208.jpg"
             alt="Biomed International Manufacturing Facility Exterior"
             className="w-full h-full object-cover rounded-4xl"
             loading="lazy" // Lazy load image for improved performance

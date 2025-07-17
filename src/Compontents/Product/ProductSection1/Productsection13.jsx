@@ -66,11 +66,11 @@ export default function Productsection13() {
               Activates connective tissues and cells, helping repair cartilage tissue and prevent degradation.
             </p>
 
-            <div className="py-3">
+            <div className="py-3 h-80 md:h-110 lg:h-130">
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT1pM5TY5flITYDamydaH2p9DkhmVCoEMqrl5rDsM93b33c__8jQXUl9AvmhAQm9U9-Vo&usqp=CAU"
+                src="/Shared/Newfolder/ChatGPT Image Jul 17, 2025, 06_39_23 PM.png"
                 alt="Chondroitin sulfate sodium health benefits"
-                className="w-full h-full object-cover rounded-4xl"
+                className="w-full h-full  rounded-4xl"
                 loading="lazy" // Lazy load the image for better performance
               />
             </div>

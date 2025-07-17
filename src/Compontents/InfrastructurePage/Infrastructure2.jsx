@@ -49,7 +49,7 @@ export default function Infrastructure2() {
           {/* Image Section */}
           <div data-aos="fade-left">
             <img
-              src="https://www.animationkolkata.com/blog/wp-content/uploads/2023/04/image5.jpeg"
+              src="/Shared/Newfolder/IMG_20250625_144033.jpg"
               alt="Biomed R&D and Manufacturing Facility"
               className="w-full h-full object-cover rounded-4xl"
               loading="lazy" // Lazy load image for better performance
