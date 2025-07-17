@@ -29,7 +29,7 @@ export default function Aboutsection1() {
                 </div>
                 {/* Add icon and Customers text */}
                 <div className="flex items-center space-x-2 py-1 px-3">
-                  <div className="w-20 h-16 bg-green-500 text-white rounded-full flex items-center justify-center ">
+                  <div className="w-20 h-16 bg-green-500 text-white rounded-full flex items-center justify-center">
                     <span className="md:text-xl font-semibold">+</span>
                   </div>
                   <span className="text-gray-600 text-lg md:text-xl">50K+ Customers</span>
@@ -40,6 +40,7 @@ export default function Aboutsection1() {
                 src="/Shared/Newfolder/About.jpeg"
                 alt="Biomed production team working in lab"
                 className="w-full h-full pt-10 object-cover object-center rounded-4xl transition-transform duration-500 ease-in-out hover:scale-105 hover:opacity-90"
+                loading="lazy"
               />
             </div>
           </div>
@@ -101,6 +102,7 @@ export default function Aboutsection1() {
                 className="w-fit relative group flex items-center gap-3 px-5 py-3 border border-green-600 rounded-full text-black font-medium overflow-hidden transition-colors duration-300"
                 aria-label="Navigate to contact section"
                 onClick={() => window.location.href = '/contact'}
+                title="Click to navigate to the contact section"
               >
                 <span className="absolute inset-0 bg-green-600 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out rounded-full"></span>
 
