@@ -9,10 +9,12 @@ import Productsection1 from '../Compontents/Product/ProductSection1/Productsecti
 import ProductSection2 from '../Compontents/Product/ProductSection2/ProductSection2'
 import Contact from '../Compontents/Contact/Contact'
 import MetaTags from '../Core/Metatags'
+import ScrollToTop from './ScrollToTop'
 
 export const AppRouter = () => {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
     <MetaTags/>
     <Routes>
          <Route element={<Main/>}>

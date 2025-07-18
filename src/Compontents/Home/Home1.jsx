@@ -23,22 +23,18 @@ export default function Home1() {
 
   return (
     <section
-      className="relative mb-10 sm:mb-16 md:mb-20 lg:mb-24 mx-5 md:mx-10 lg:mx-20"
+      className="relative mx-3 md:mx-5 lg:mx-20 py-5 md:py-10"
       aria-label="Product Showcase Section"
     >
       <div className="bg-gray-200 rounded-2xl py-10 sm:py-14 md:py-16 lg:py-20">
-        <div className="px-5 max-w-7xl mx-auto">
-
-          <p className="py-3 text-lg flex items-center gap-2">
+        <div className="px-5 md:px-10 lg:px-5 max-w-7xl mx-auto">
+          
+          <p className="py-3 text-lg flex items-center gap-2" data-aos="fade-up">
             <span className="w-3 h-3 rounded-full bg-green-500"></span>
             Products
           </p>
 
-          <p 
-            className="text-xl sm:text-2xl md:text-2xl font-bold mb-8"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
+          <p className="text-xl sm:text-2xl md:text-2xl font-bold mb-8" data-aos="fade-up">
             Our Advanced Biotech Offerings
           </p>
 
@@ -47,8 +43,7 @@ export default function Home1() {
               <div
                 key={index}
                 className="rounded-2xl overflow-hidden shadow-md relative group"
-                data-aos="zoom-in"
-                data-aos-delay={`${index * 200}`} 
+                data-aos="fade-up"
               >
                 <img
                   src={product.image}
@@ -56,7 +51,7 @@ export default function Home1() {
                   className="w-full h-60 sm:h-72 md:h-80 lg:h-96 object-cover transform group-hover:scale-105 transition duration-300 ease-in-out"
                   loading="lazy"
                 />
-                <div className="absolute bottom-4 left-4 bg-gray-500 bg-opacity-50 text-white px-3 py-3 rounded text-lg font-medium">
+                <div className="absolute bottom-4 left-4 bg-gray-500 bg-opacity-50 text-white px-3 py-3 rounded text-sm md:text-lg">
                   {product.name}
                 </div>
               </div>

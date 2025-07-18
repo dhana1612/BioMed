@@ -1,7 +1,6 @@
 import React from 'react'
 import HeroSection from './HeroSection'
 import Home1 from './Home1'
-import Infrastructure3 from '../InfrastructurePage/Infrastructure3'
 import Aboutsection4 from '../Aboutus/Aboutsection4'
 import CertificationsSection from '../CertificationsSection'
 import { Helmet } from 'react-helmet'
@@ -17,7 +16,7 @@ export default function Homesection() {
     <MetaTags/>
     <HeroSection/>
     <Home_about/>
-    <Home1/>
+    <Home1/>  
     <Home_Excellence/>
     <Aboutsection4/>
     <CertificationsSection/>

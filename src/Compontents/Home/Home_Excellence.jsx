@@ -12,12 +12,12 @@ export default function Home_Excellence() {
   }, []);
 
   return (
-    <section className="pb-15" aria-label="Spray Drying Technology at Biomed International">
-      <div className="px-5 md:px-10 lg:px-5 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-7 md:gap-10">
+    <section className="py-15" aria-label="Spray Drying Technology at Biomed International">
+      <div className="px-5 md:px-10 lg:px-5 max-w-7xl mx-auto py-3 md:py-6">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-7 md:gap-10" data-aos="fade-up">
 
           {/* Left Image */}
-          <div data-aos="fade-right" className='col-span-2'>
+          <div className="col-span-1 lg:col-span-2">
             <img
               src="/Shared/Newfolder/Excellence1.jpeg"
               alt="Spray drying equipment used in Biomed facility"
@@ -27,50 +27,50 @@ export default function Home_Excellence() {
           </div>
 
           {/* Right Text Section */}
-          <div className="col-span-3" data-aos="fade-left">
+          <div className="col-span-1 lg:col-span-3">
             <p className="py-3 text-lg md:text-xl flex items-center gap-2">
               <span className="w-3 h-3 rounded-full bg-green-500"></span>
               Our Pillars of Excellence
             </p>
 
-            <h2 className="font-bold py-3 text-lg md:text-2xl" data-aos="fade-up" data-aos-delay="200">
+            <h2 className="font-bold py-3 text-lg md:text-2xl text-gray-600">
               Innovating Health with Premium Chondroitin Sulfate Sodium and Collagen Solutions in a Sustainable Environment
             </h2>
 
-            <p className="py-3 text-lg md:text-xl" data-aos="fade-up" data-aos-delay="300">
+            <p className="py-3 text-lg md:text-xl text-gray-600">
               At the forefront of green biotechnology, we specialize in the development and production of high-purity Chondroitin Sulfate Sodium and Collagen, designed to meet the evolving needs of the pharmaceutical, nutraceutical, and cosmetic industries.
             </p>
 
             {/* Bottom Split Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-7">
               {/* Left Column */}
-              <div data-aos="fade-left" data-aos-delay="700" className="flex flex-col">
+              <div className="flex flex-col" data-aos="fade-left">
                 <div className="flex items-center space-x-4">
                   <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-green-600 transition-colors duration-500 group-hover:bg-white">
                     <Heart className="w-6 h-6 text-white group-hover:text-green-600 transition-colors duration-500" />
                   </div>
                   <p className="py-3 text-lg md:text-xl font-bold">Innovation</p>
                 </div>
-                <p className="py-3 text-lg md:text-xl">
+                <p className="py-3 text-lg md:text-xl text-gray-600">
                   Due to its efficiency and reliability, spray drying is widely used in both food and pharmaceutical industries, offering consistent quality and superior results over traditional drying methods.
                 </p>
               </div>
 
               {/* Right Column */}
-              <div data-aos="fade-left" data-aos-delay="700" className="flex flex-col">
+              <div className="flex flex-col" data-aos="fade-left">
                 <div className="flex items-center space-x-4">
                   <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-green-600 transition-colors duration-500 group-hover:bg-white">
                     <Heart className="w-6 h-6 text-white group-hover:text-green-600 transition-colors duration-500" />
                   </div>
                   <p className="py-3 text-lg md:text-xl font-bold">Quality</p>
                 </div>
-                <p className="py-3 text-lg md:text-xl">
+                <p className="py-3 text-lg md:text-xl text-gray-600">
                   Due to its efficiency and reliability, spray drying is widely used in both food and pharmaceutical industries, offering consistent quality and superior results over traditional drying methods.
                 </p>
               </div>
 
               {/* Image Section (Centering it between the two columns, with flexbox to maintain consistent height) */}
-              <div data-aos="zoom-in" data-aos-delay="600" className="flex justify-center items-center">
+              <div className="flex justify-center items-center" data-aos="fade-up">
                 <img
                   src="/Shared/Newfolder/Excellence.jpg"
                   alt="High-efficiency spray drying process at Biomed"
@@ -80,14 +80,14 @@ export default function Home_Excellence() {
               </div>
 
               {/* Left Column (Sustainability section) */}
-              <div data-aos="fade-left" data-aos-delay="700" className="flex flex-col">
+              <div className="flex flex-col" data-aos="fade-right">
                 <div className="flex items-center space-x-4">
                   <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-lg bg-green-600 transition-colors duration-500 group-hover:bg-white">
                     <Heart className="w-6 h-6 text-white group-hover:text-green-600 transition-colors duration-500" />
                   </div>
                   <p className="py-3 text-lg md:text-xl font-bold">Sustainability</p>
                 </div>
-                <p className="py-3 text-lg md:text-xl">
+                <p className="py-3 text-lg md:text-xl text-gray-600">
                   Due to its efficiency and reliability, spray drying is widely used in both food and pharmaceutical industries, offering consistent quality and superior results over traditional drying methods.
                 </p>
 

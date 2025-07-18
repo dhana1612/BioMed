@@ -1,23 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const Header = () => {
+export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
 
   return (
     <>
-
       {/* Top Contact Bar */}
-      <div className="flex flex-wrap justify-between items-center px-4 md:px-10 lg:px-20 py-2 text-sm text-gray-700 border-b">
+      <div className="flex flex-wrap justify-between items-center px-4 md:px-10 lg:px-20 py-2 text-lg text-gray-700">
         <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" data-aos="fade-up">
             <i className="fi fi-rr-envelope text-lg mt-[1px]" aria-hidden="true"></i>
-            <a href="mailto:info@biomedintl.in" className="text-[15px] font-medium hover:underline">
+            <a href="mailto:info@biomedintl.in" className="font-medium hover:underline">
               info@biomedintl.in
             </a>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2" data-aos="fade-up">
             <i className="fi fi-rr-phone-call text-lg mt-[1px]" aria-hidden="true"></i>
-            <a href="tel:+919791154650" className="text-[15px] font-medium hover:underline">
+            <a href="tel:+919791154650" className="font-medium hover:underline">
               9791154650
             </a>
           </div>
@@ -25,13 +33,12 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="px-4 md:px-10 lg:px-20  border-b relative z-50" aria-label="Main Navigation">
+      <nav className="px-4 md:px-10 lg:px-20 relative z-50 py-3" aria-label="Main Navigation">
         <div className="max-w-7xl mx-auto flex items-center justify-between space-x-6 w-full">
           {/* Logo */}
-        <a href="/" title="Go to Homepage">
-          <img src="/Shared/Newfolder/logo.png" alt="Biomed International Logo" className="h-40 object-contain" />
-        </a>
-
+          <a href="/" title="Go to Homepage">
+            <img src="/Shared/Newfolder/logo.png" alt="Biomed International Logo" className="h-25 object-contain" loading="lazy" />
+          </a>
 
           {/* Hamburger */}
           <button
@@ -43,7 +50,7 @@ const Header = () => {
           </button>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-8 lg:space-x-10 text-gray-800 font-medium text-base ml-10">
+          <ul className="hidden md:flex space-x-8 lg:space-x-10 text-gray-800 text-xl ml-10" data-aos="fade-up">
             <li><a href="/" className="hover:text-green-600">Home</a></li>
             <li><a href="/about-us" className="hover:text-green-600">About Us</a></li>
             <li><a href="/infrastructure" className="hover:text-green-600">Infrastructure</a></li>
@@ -70,7 +77,7 @@ const Header = () => {
           </ul>
 
           {/* Contact Us */}
-          <div className="hidden md:block ml-auto">
+          <div className="hidden md:block ml-auto" data-aos="fade-up">
             <a
               href="/contact"
               className="group relative flex items-center border border-green-600 text-green-600 px-5 py-3.5 rounded-full overflow-hidden transition-colors duration-500"
@@ -113,7 +120,6 @@ const Header = () => {
           </div>
         )}
       </nav>
-
     </>
   );
 };

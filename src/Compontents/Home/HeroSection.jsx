@@ -5,13 +5,13 @@ import 'aos/dist/aos.css';
 export default function HeroSection() {
   useEffect(() => {
     AOS.init({
-      duration: 1200,
+      duration: 1000,
       once: true,
     });
   }, []);
 
   return (
-    <header className="py-15 px-5 md:px-10 lg:px-20" aria-label="Homepage Hero Section">
+    <header className="py-10 px-5 md:px-10 lg:px-20" aria-label="Homepage Hero Section">
       <div
         className="py-35 md:py-45 lg:py-50 bg-green-300 rounded-4xl bg-cover bg-center relative"
         style={{
@@ -19,13 +19,11 @@ export default function HeroSection() {
         }}
         role="img"
         aria-label="Nature background representing Biomed International’s green environment mission"
+        data-aos="fade-up"
       >
         <div className="relative z-10 flex flex-col justify-center items-start h-full max-w-7xl px-5 mx-auto">
           <div className="max-w-2xl">
-            <h1
-              className="text-white font-bold text-2xl md:text-4xl lg:text-5xl leading-tight mb-8"
-              data-aos="fade-right"
-            >
+            <h1 className="text-white font-bold text-2xl md:text-4xl lg:text-5xl leading-tight mb-8">
               Biomed International an established platform for the green environment.
             </h1>
 
@@ -37,8 +35,6 @@ export default function HeroSection() {
               href="#"
               aria-label="Discover more about Biomed International"
               className="group relative inline-flex items-center px-4 py-2 md:px-6 md:py-3 font-medium border border-white rounded-full overflow-hidden transition-colors duration-300"
-              data-aos="zoom-in"
-              data-aos-delay="300"
             >
               <span className="relative z-10 text-white text-sm md:text-base">
                 Discover More

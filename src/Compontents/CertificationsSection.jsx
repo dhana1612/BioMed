@@ -1,15 +1,8 @@
 import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function CertificationsSection() {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
   const certifications = [
     {
       src: "https://cdn.dribbble.com/userupload/5332605/file/original-44cc2e7058108f3bf07b21890b296120.jpg?resize=400x0",
@@ -33,29 +26,28 @@ export default function CertificationsSection() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <section className="bg-white pb-10">
       <div className="px-5 md:px-10 lg:px-5 max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="mb-10">
-          <p className="py-3 text-lg md:text-xl flex items-center gap-2">
+          <p className="py-3 text-lg md:text-xl flex items-center gap-2" data-aos="fade-up">
             <span className="w-3 h-3 rounded-full bg-green-500"></span>
             Our Certifications
           </p>
 
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 mt-4">
-            <h2
-              className="text-2xl md:text-3xl font-semibold col-span-2"
-              data-aos="fade-right"
-              data-aos-delay="100"
-            >
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mt-4" data-aos="fade-up">
+            <h2 className="text-2xl md:text-3xl font-semibold col-span-2">
               Global Standards, Proven Excellence
             </h2>
-            <p
-              className="text-gray-700 text-lg md:text-xl max-w-2xl col-span-1 lg:col-span-3"
-              data-aos="fade-left"
-              data-aos-delay="200"
-            >
+            <p className="text-gray-600 text-lg md:text-xl max-w-2xl col-span-3 lg:col-span-3">
               Our commitment to quality, safety, and compliance is reflected in
               the certifications we proudly hold. Each certificate is a testament
               to our adherence to international regulatory standards and our
@@ -65,11 +57,7 @@ export default function CertificationsSection() {
         </div>
 
         {/* Certification Logos */}
-        <div
-          className="flex flex-wrap justify-center gap-6 sm:gap-8 items-center"
-          data-aos="zoom-in-up"
-          data-aos-delay="300"
-        >
+        <div className="flex flex-wrap justify-center gap-6 sm:gap-8 items-center" data-aos="fade-up">
           {certifications.map((cert, index) => (
             <img
               key={index}
@@ -77,8 +65,6 @@ export default function CertificationsSection() {
               alt={cert.alt}
               className="w-35 sm:w-40 md:w-55 object-contain"
               loading="lazy"
-              data-aos="fade-up"
-              data-aos-delay={400 + index * 100}
             />
           ))}
         </div>

@@ -4,7 +4,10 @@ import 'aos/dist/aos.css';
 
 export default function Aboutsection3() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
   }, []);
 
   return (
@@ -12,10 +15,9 @@ export default function Aboutsection3() {
       <div className="rounded-4xl py-10 md:py-20 lg:py-30 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 md:gap-7 px-5">
 
-          {/* Intro Block */}
-          <div className="py-3" data-aos="fade-up">
+          <div className="py-3" data-aos="fade-right">
             <h1 className="font-bold py-3 text-xl md:text-3xl">Meet The Promoters</h1>
-            <p className="py-3 text-lg md:text-xl">
+            <p className="py-3 text-lg md:text-xl text-gray-600">
               Biomed International is a life science company committed to the well-being of people.
             </p>
 
@@ -27,14 +29,13 @@ export default function Aboutsection3() {
             </div>
           </div>
 
-          {/* Promoter 1 */}
-          <div data-aos="fade-up" data-aos-delay="200">
+          <div data-aos="fade-up">
             <div className="bg-white rounded-xl shadow-sm overflow-hidden">
               <img
                 src="/Shared/Newfolder/Person1.jpeg"
                 alt="Portrait of Pratap Reddy Maddali"
                 className="w-full h-64 object-cover"
-                loading="lazy" // Lazy load for performance improvement
+                loading="lazy"
               />
               <div className="p-4">
                 <p className="font-semibold text-gray-800">Pratap Reddy Maddali</p>
@@ -43,14 +44,13 @@ export default function Aboutsection3() {
             </div>
           </div>
 
-          {/* Promoter 2 */}
-          <div data-aos="fade-up" data-aos-delay="400">
+          <div data-aos="fade-up">
             <div className="bg-white rounded-xl shadow-sm overflow-hidden">
               <img
                 src="/Shared/Newfolder/Person2.jpg"
                 alt="Portrait of Co-founder of Biomed International"
                 className="w-full h-64 object-cover"
-                loading="lazy" // Lazy load for performance improvement
+                loading="lazy"
               />
               <div className="p-4">
                 <p className="font-semibold text-gray-800">Pratap Reddy Maddali</p>

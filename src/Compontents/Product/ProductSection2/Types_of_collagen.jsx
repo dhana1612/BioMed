@@ -3,13 +3,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function Types_of_collagen() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800, // animation duration in ms
-      once: false,   // animate every time the element enters the view
-    });
-  }, []);
-
   const benefits = [
     {
       id: 1,
@@ -37,23 +30,28 @@ export default function Types_of_collagen() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
-    <section className="pt-1 md:pt-20">
+    <section className="pt-1 md:pt-20" aria-label="Types of Collagen and their Benefits">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 px-5 md:px-10 lg:px-5">
-          {/* Left Static Block */}
           <div data-aos="fade-right">
             <h1 className="font-bold text-xl md:text-3xl">Types of Collagen:</h1>
-            <p className="py-3 text-lg md:text-xl">
+            <p className="py-3 text-lg md:text-xl text-gray-600">
               Various types of collagen are found. The most common collagens are Type-I and Type-II.
             </p>
           </div>
 
-          {/* Right Scrollable Block */}
-          <div className="overflow-y-scroll no-scrollbar scroll-smooth col-span-1 h-[800px]">
-            <div data-aos="fade-up">
+          <div className="overflow-y-scroll no-scrollbar scroll-smooth col-span-1 h-[800px] px-2" data-aos="fade-left">
+            <div>
               <h5 className="font-bold py-3 text-md md:text-xl">Type-I Collagen</h5>
-              <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
+              <ul className="list-disc pl-5 text-md md:text-xl marker:text-green-600 marker:text-3xl text-gray-600">
                 <li className="pb-3">Type-I collagen gives strength to your skin, bones, ligaments, and tendons.</li>
                 <li className="pb-3">Marine collagen is a type-I collagen.</li>
                 <li className="pb-3">Marine collagen, also known as fish collagen, comes from the skin and scales of fish.</li>
@@ -66,19 +64,19 @@ export default function Types_of_collagen() {
                   src="/Shared/Newfolder/collagen structure.png"
                   alt="Chemical structure of Type-I collagen"
                   className="w-full h-full object-cover rounded-xl"
-                  loading="lazy" // Lazy load the image for better performance
+                  loading="lazy"
                 />
               </div>
 
               <h5 className="font-bold py-3 text-md md:text-xl">Function of Type-I Collagen</h5>
-              <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
+              <ul className="list-disc pl-5 text-md md:text-xl marker:text-green-600 marker:text-3xl text-gray-600">
                 <li className="pb-3">Type-I collagen provides structure to tendons and ligaments.</li>
                 <li className="pb-3">Skin elasticity, strength, and anti-aging.</li>
                 <li>Type-I collagen is essential when it comes to beauty benefits.</li>
               </ul>
 
               <h5 className="font-bold py-3 text-md md:text-xl">Applications of Marine/Fish Collagen:</h5>
-              <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
+              <ul className="list-disc pl-5 text-md md:text-xl text-gray-600 marker:text-green-600 marker:text-3xl">
                 <li className="pb-3">Dermis regeneration</li>
                 <li className="pb-3">Heart muscle reconstruction</li>
                 <li>Promotes polarity nerve cells, alignment, and increases adhesion</li>
@@ -96,21 +94,21 @@ export default function Types_of_collagen() {
                     </div>
                     <div className="benefit-text flex flex-col justify-between">
                       <div className="benefit-title text-lg font-semibold pb-3">{benefit.title}</div>
-                      <div className="benefit-description text-sm text-gray-700">{benefit.description}</div>
+                      <div className="benefit-description text-lg text-gray-600">{benefit.description}</div>
                     </div>
                   </div>
                 ))}
               </div>
 
               <h5 className="font-bold py-3 text-md md:text-xl">Type-II Collagen</h5>
-              <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
+              <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl text-gray-600">
                 <li className="pb-3">Type-I collagen gives strength to your skin, bones, ligaments, and tendons.</li>
                 <li className="pb-3">Marine collagen is a type-I collagen.</li>
                 <li className="pb-3">Marine collagen, also known as fish collagen, comes from the skin and scales of fish.</li>
                 <li>Marine collagen is rich in antioxidants and protects the skin from oxidation and aging.</li>
               </ul>
 
-              <h5 className="font-bold py-3 text-md md:text-xl">Chemical structure of Type-I Collagen</h5>
+              <h5 className="font-bold py-3 text-md md:text-xl">Chemical structure of Type-II Collagen</h5>
               <div className="h-96 overflow-hidden rounded-xl py-3">
                 <img
                   src="/Shared/Newfolder/collagen structure.png"
@@ -120,15 +118,15 @@ export default function Types_of_collagen() {
                 />
               </div>
 
-              <h5 className="font-bold py-3 text-md md:text-xl">Function of Type-I Collagen</h5>
-              <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
+              <h5 className="font-bold py-3 text-md md:text-xl">Function of Type-II Collagen</h5>
+              <ul className="list-disc pl-5 text-md md:text-xl text-gray-600  marker:text-green-600 marker:text-3xl">
                 <li className="pb-3">Type-I collagen provides structure to tendons and ligaments.</li>
                 <li className="pb-3">Skin elasticity, strength, and anti-aging.</li>
                 <li>Type-I collagen is essential when it comes to beauty benefits.</li>
               </ul>
 
               <h5 className="font-bold py-3 text-md md:text-xl">Applications of Marine/Fish Collagen:</h5>
-              <ul className="list-disc pl-5 text-md md:text-lg marker:text-green-600 marker:text-3xl">
+              <ul className="list-disc pl-5 text-md md:text-xl text-gray-600 marker:text-green-600 marker:text-3xl">
                 <li className="pb-3">Dermis regeneration</li>
                 <li className="pb-3">Heart muscle reconstruction</li>
                 <li>Promotes polarity nerve cells, alignment, and increases adhesion</li>
@@ -146,7 +144,7 @@ export default function Types_of_collagen() {
                     </div>
                     <div className="benefit-text flex flex-col justify-between">
                       <div className="benefit-title text-lg font-semibold pb-3">{benefit.title}</div>
-                      <div className="benefit-description text-sm text-gray-700">{benefit.description}</div>
+                      <div className="benefit-description text-lg text-gray-600 ">{benefit.description}</div>
                     </div>
                   </div>
                 ))}
@@ -154,8 +152,6 @@ export default function Types_of_collagen() {
             </div>
           </div>
         </div>
-
-
       </div>
     </section>
   );
