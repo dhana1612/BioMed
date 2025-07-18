@@ -6,7 +6,7 @@ export default function Home1() {
   const products = [
     {
       name: 'Chondroitin Sulfate Sodium',
-      image: '/Shared/Newfolder/Product2.jpg',
+      image: '/Shared/Newfolder/Product.jpg',
     },
     {
       name: 'Collagen',
