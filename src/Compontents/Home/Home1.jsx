@@ -10,7 +10,7 @@ export default function Home1() {
     },
     {
       name: 'Collagen',
-      image: '/Shared/Newfolder/Product.JPG',
+      image: '/Shared/Newfolder/Product.jpg',
     },
   ];
 
