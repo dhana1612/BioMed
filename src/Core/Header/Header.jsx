@@ -37,7 +37,7 @@ export const Header = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between space-x-6 w-full">
           {/* Logo */}
           <a href="/" title="Go to Homepage">
-            <img src="/Shared/Newfolder/logo.png" alt="Biomed International Logo" className="h-25 object-contain" loading="lazy" />
+            <img src="/Shared/Newfolder/Logo_Image-removebg-preview.png" alt="Biomed International Logo" className="h-15 object-contain" loading="lazy" />
           </a>
 
           {/* Hamburger */}

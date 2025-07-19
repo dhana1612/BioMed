@@ -17,7 +17,7 @@ export default function Home_Excellence() {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-7 md:gap-10" data-aos="fade-up">
 
           {/* Left Image */}
-          <div className="col-span-1 lg:col-span-2">
+          <div className="col-span-1 lg:col-span-2 py-1 lg:py-10">
             <img
               src="/Shared/Newfolder/Excellence1.jpeg"
               alt="Spray drying equipment used in Biomed facility"

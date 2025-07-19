@@ -42,9 +42,9 @@ export const Footer = () => {
         <div className="max-w-7xl mx-auto px-5 md:px-10 lg:px-5">
          <a href="/" title="Go to specific section">
             <img 
-              src="/Shared/Newfolder/logo.png" 
+              src="/Shared/Newfolder/Logo_Image-removebg-preview.png" 
               alt="Biomed International Logo" 
-              className="h-30 py-2" 
+              className="h-20 py-4" 
               loading="lazy" 
             />
           </a>
