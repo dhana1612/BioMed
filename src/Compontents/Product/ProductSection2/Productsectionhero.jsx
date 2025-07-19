@@ -15,7 +15,7 @@ export default function Productsectionhero() {
       className="my-15 mx-5 lg:mx-20 rounded-4xl" 
       aria-label="Collagen Hero Section" 
       style={{
-        backgroundImage: "url('/Shared/Newfolder/Collagen_BG1.png')",
+        backgroundImage: "url('/Shared/Newfolder/HeroSection_Image.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center"
       }} 

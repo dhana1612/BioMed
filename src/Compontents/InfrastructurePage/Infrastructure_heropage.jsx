@@ -15,7 +15,7 @@ export default function Infrastructure_heropage() {
       className="my-15 px-5 md:px-10 lg:px-20 mx-5 lg:mx-20 rounded-4xl" 
       aria-label="Infrastructure Hero Section" 
       style={{
-        backgroundImage: "url('/Shared/Newfolder/DJI_20250706172815_0054_D.jpg')",
+        backgroundImage: "url('/Shared/Newfolder/HeroSection_Image.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center"
       }} 
