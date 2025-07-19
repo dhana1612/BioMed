@@ -53,7 +53,7 @@ export default function Aboutsection2() {
 
           <div data-aos="fade-left">
             <img
-              src="/Shared/Newfolder/DJI_20250706172815_0054_D.jpg"
+              src="/Shared/Newfolder/HeroSection_Image.jpg"
               alt="Biomed production infrastructure and facility"
               className="w-full h-full object-cover rounded-4xl"
               loading="lazy"
