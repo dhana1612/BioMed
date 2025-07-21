@@ -24,7 +24,7 @@ export default function Contact2() {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://bio-med.vercel.app/contact.php', {
+      const response = await fetch('https://biomedintl.com/contact.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
