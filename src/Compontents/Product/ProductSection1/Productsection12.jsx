@@ -53,21 +53,24 @@ export default function Productsection12() {
           </div>
         </div>
 
-{/* Google Drive Video Section */}
+
 <div className="py-10" data-aos="zoom-in" data-aos-delay="400">
   <div className="relative w-full" style={{ paddingTop: '40%' }}>
-    <iframe
+    <video
       className="absolute top-0 left-0 w-full h-full rounded-xl"
-      src="https://drive.google.com/file/d/1mlkcjO5sjOXx1gazxtlT7AUtPiEENGgR/preview" // Google Drive video link in embed format
+      src="/Shared/Video/Sample_Video.mp4" 
       title="Biomed International Introduction Video"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerPolicy="strict-origin-when-cross-origin"
-      allowFullScreen
-      loading="lazy" // Lazy load the iframe
-    ></iframe>
+      autoPlay
+      muted
+      playsInline
+      loop
+      controls 
+    >
+      Your browser does not support the video tag.
+    </video>
   </div>
 </div>
+
       </div>
     </section>
   );

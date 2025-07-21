@@ -18,7 +18,7 @@ export default function Productsection21() {
 
   return (
     <section>
-      <div className="bg-gray-200 rounded-4xl py-10 md:py-20 my-5">
+      <div className="bg-gray-200 rounded-4xl py-10 md:py-20 my-5 mx-2 md:mx-20 ">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-7 px-5 md:px-10 lg:px-5">
 
           <div data-aos="fade-right">

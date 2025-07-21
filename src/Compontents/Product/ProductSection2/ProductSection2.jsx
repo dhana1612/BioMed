@@ -6,6 +6,7 @@ import Productsection21 from './Productsection21'
 import ProductSection22 from './ProductSection22'
 import Skins_and_joints from './Skins_and_joints'
 import Types_of_collagen from './Types_of_collagen'
+import Undenaturated_chicken_collagen from './Undenaturated_chicken_collagen'
 
 export default function ProductSection2() {
   return (
@@ -18,6 +19,7 @@ export default function ProductSection2() {
     <Productsection21/>
      {/* <Productsection12/> */}
      <Types_of_collagen/>
+     <Undenaturated_chicken_collagen/>
      <ProductSection22/>
 
     </>

@@ -1,14 +1,41 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function Contact2() {
+  const [formData, setFormData] = useState({
+    user_name: '',
+    user_email: '',
+    subject: '',
+    message: '',
+  });
+
+  const [status, setStatus] = useState(null);
+
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
+    AOS.init({ duration: 1000, once: true });
   }, []);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('https://bio-med.vercel.app/contact.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+      setStatus(result.message);
+    } catch (error) {
+      setStatus('Something went wrong. Please try again later.');
+    }
+  };
 
   return (
     <section className="py-5 md:py-10" aria-labelledby="contact-section">
@@ -21,54 +48,53 @@ export default function Contact2() {
 
             <form
               className="space-y-6 py-5 flex flex-col h-full justify-between"
-              method="POST"
-              action="/api/contact"
+              onSubmit={handleSubmit}
               aria-label="Contact form"
             >
               <div className="space-y-6">
-                <label className="sr-only" htmlFor="name">Name</label>
                 <input
-                  id="name"
+                  id="user_name"
                   type="text"
-                  name="name"
+                  name="user_name"
                   placeholder="Name"
                   className="w-full bg-gray-100 rounded-full px-6 py-4 text-gray-700 focus:outline-none"
                   required
-                  aria-required="true"
+                  value={formData.user_name}
+                  onChange={handleChange}
                 />
-
-                <label className="sr-only" htmlFor="email">Email</label>
                 <input
-                  id="email"
+                  id="user_email"
                   type="email"
-                  name="email"
+                  name="user_email"
                   placeholder="Email"
                   className="w-full bg-gray-100 rounded-full px-6 py-4 text-gray-700 focus:outline-none"
                   required
+                  value={formData.user_email}
+                  onChange={handleChange}
                 />
-
-                <label className="sr-only" htmlFor="subject">Subject</label>
                 <input
                   id="subject"
                   type="text"
                   name="subject"
                   placeholder="Subject"
                   className="w-full bg-gray-100 rounded-full px-6 py-4 text-gray-700 focus:outline-none"
+                  value={formData.subject}
+                  onChange={handleChange}
                 />
-
-                <label className="sr-only" htmlFor="message">Message</label>
                 <textarea
                   id="message"
                   name="message"
                   placeholder="Message"
                   className="w-full bg-gray-100 rounded-2xl px-6 py-4 h-48 text-gray-700 focus:outline-none resize-none"
+                  required
+                  value={formData.message}
+                  onChange={handleChange}
                 />
               </div>
 
               <button
                 type="submit"
                 className="w-fit relative group flex items-center gap-3 px-3 py-3 border border-green-600 rounded-full text-black font-medium overflow-hidden transition-colors duration-300"
-                aria-label="Submit contact form"
               >
                 <span className="absolute inset-0 bg-green-600 transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-300 ease-in-out rounded-full"></span>
                 <span className="relative z-10 group-hover:text-white transition-colors duration-300">
@@ -80,6 +106,8 @@ export default function Contact2() {
                   </span>
                 </div>
               </button>
+
+              {status && <p className="text-sm text-center text-green-600 pt-2">{status}</p>}
             </form>
           </div>
 
@@ -87,7 +115,7 @@ export default function Contact2() {
             <iframe
               title="Biomed International location map"
               className="w-full h-full min-h-[600px] rounded-3xl"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.946708721909!2d78.48667151482155!3d17.385044088079344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb973f3db59cbb%3A0x90d2e5a2c07b8e4b!2sSoubhagya%20Go%20Sadan!5e0!3m2!1sen!2sin!4v1689492751346!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=..."
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

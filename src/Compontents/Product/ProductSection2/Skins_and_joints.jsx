@@ -11,7 +11,7 @@ export default function Skins_and_joints() {
   }, []);
 
   return (
-    <section className="pb-15" aria-label="Collagen Supports Skin, Joints, and Tissues">
+    <section className="py-15" aria-label="Collagen Supports Skin, Joints, and Tissues">
       <div className="px-5 md:px-10 lg:px-5 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-7 md:gap-10">
 
@@ -40,16 +40,16 @@ export default function Skins_and_joints() {
               <li>It’s a vital part of connective tissue and is highly essential to hold body cells together. Collagen is one of the best possible sources of all essential amino acids.</li>
             </ul>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-7">
-              <div data-aos="fade-up">
+            <div className="grid grid-cols-1 lg:grid-cols-4  gap-7 py-7">
+              <div data-aos="fade-up" className='col-span-1 lg:col-span-2'>
                 <img
-                  src="/Shared/Newfolder/Benifits.png"
+                  src="/Shared/Newfolder/Joints_Health_and_Mobility.png"
                   alt="Benefits of collagen"
                   className="w-full h-full object-cover rounded-4xl"
                   loading="lazy"
                 />
               </div>
-              <div data-aos="fade-up">
+              <div data-aos="fade-up" className='col-span-1 lg:col-span-2'>
                 <ul className="list-disc pl-5 text-md md:text-xl marker:text-green-600 marker:text-3xl text-gray-600">
                   <li className="pb-3">Chondroitin sulfate sodium is one of the building blocks of cartilage in the joints breakdown. Chondroitin sulfate sodium is a dietary supplement that helps cartilage retain water and gives elasticity.</li>
                   <li>Collagen helps replace dead skin cells and reduce blood clots.</li>

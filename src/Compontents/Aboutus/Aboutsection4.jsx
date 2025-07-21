@@ -43,21 +43,23 @@ export default function Aboutsection4() {
           </div>
         </div>
 
-        {/* Google Drive Video Section */}
-        <div className="py-5 lg:py-10" data-aos="fade-up">
-          <div className="relative w-full" style={{ paddingTop: '40%' }}>
-            <iframe
-              className="absolute top-0 left-0 w-full h-full rounded-xl"
-              src="https://drive.google.com/file/d/1mlkcjO5sjOXx1gazxtlT7AUtPiEENGgR/preview" 
-              title="Biomed International Introduction Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-              loading="lazy"
-            ></iframe>
-          </div>
-        </div>
+
+<div className="py-10" data-aos="zoom-in" data-aos-delay="400">
+  <div className="relative w-full" style={{ paddingTop: '40%' }}>
+    <video
+      className="absolute top-0 left-0 w-full h-full rounded-xl"
+      src="/Shared/Video/Sample_Video.mp4" 
+      title="Biomed International Introduction Video"
+      autoPlay
+      muted
+      playsInline
+      loop
+      controls 
+    >
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
 
       </div>
     </section>

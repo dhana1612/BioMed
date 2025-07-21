@@ -11,7 +11,7 @@ export default function Health_and_Mobility() {
   }, []);
 
   return (
-    <section className="pb-15" aria-label="Spray Drying Technology at Biomed International">
+    <section className="py-15" aria-label="Spray Drying Technology at Biomed International">
       <div className="px-5 md:px-10 lg:px-5 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-7 md:gap-10">
           <div className='col-span-2' data-aos="fade-right">
@@ -42,16 +42,17 @@ export default function Health_and_Mobility() {
               <li>Chondroitin sulfate-B is also known as Dermatan sulfate.</li>
             </ul>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-7 py-7">
-              <div>
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-7 py-7">
+              <div className='col-span-1 lg:col-span-2'>
                 <img
-                  src="/Shared/Newfolder/joint-injuries-of-the-body.jpg"
+                  src="/Shared/Newfolder/Joints_Health_and_Mobility.png"
                   alt="High-efficiency spray drying process at Biomed"
-                  className="w-full h-full object-cover rounded-4xl"
+                  className="w-full h-full  rounded-4xl"
                   loading="lazy"
                 />
               </div>
-              <div>
+
+              <div className='col-span-1 lg:col-span-2'>
                 <h2 className="font-bold py-3 text-base md:text-lg">Two main types of Chondroitin sulfate sodium</h2>
                 <p className="py-3 text-lg md:text-xl text-gray-600">
                   <span className="font-bold py-3 text-base md:text-lg">Sulfate A:</span> Sulfated at position 4, also known as Chondroitin 4- sulfate. It is extracted from bovine cartilage.
@@ -60,6 +61,7 @@ export default function Health_and_Mobility() {
                   <span className="font-bold py-3 text-base md:text-lg">Sulfate C:</span> Sulfated at position 6, also known as Chondroitin 6- sulfate. It is extracted from Shark Cartilage.
                 </p>
               </div>
+
             </div>
           </div>
         </div>
